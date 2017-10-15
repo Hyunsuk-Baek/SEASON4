@@ -8,7 +8,8 @@
 */
 private _altisArray = ["Land_i_Shop_01_V1_F","Land_i_Shop_01_V2_F","Land_i_Shop_01_V3_F","Land_i_Shop_02_V1_F","Land_i_Shop_02_V2_F","Land_i_Shop_02_V3_F"];
 private _tanoaArray = ["Land_House_Small_01_F"];
-private _spawnBuildings = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
+private _lossantosArray = [];
+private _spawnBuildings = [[["Altis", _altisArray], ["Tanoa", _tanoaArray], ["LosSantos", _lossantosArray]]] call TON_fnc_terrainSort;
 
 civ_spawn_1 = nearestObjects[getMarkerPos  "civ_spawn_1", _spawnBuildings,350];
 civ_spawn_2 = nearestObjects[getMarkerPos  "civ_spawn_2", _spawnBuildings,350];
@@ -38,3 +39,9 @@ if (life_is_alive && !life_is_arrested) then {
     };
 };
 life_is_alive = true;
+
+//AOSoul Added
+[] execVM "AOSoul\robstore.sqf";    //Rob Store
+[] execVM "AOSoul\AntiVoice.sqf";   //안티 마이크
+[] execVM "AOSoul\FlareGun.sqf";	//FlareGun
+player addRating 9999999;

@@ -23,21 +23,21 @@ class CfgSpawnPoints {
                 displayName = "Athira";
                 spawnMarker = "civ_spawn_3";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "";
+                conditions = "license_civ_level3";
             };
 
             class Pyrgos {
                 displayName = "Pyrgos";
                 spawnMarker = "civ_spawn_2";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "";
+                conditions = "license_civ_level2";
             };
 
             class Sofia {
                 displayName = "Sofia";
                 spawnMarker = "civ_spawn_4";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "";
+                conditions = "license_civ_level4";
             };
 
             class RebelN {
@@ -47,11 +47,25 @@ class CfgSpawnPoints {
                 conditions = "license_civ_rebel";
             };
 
-            class RebelS {
-                displayName = $STR_SP_Reb_S;
+            class KinghillRed {
+                displayName = "Battle-RedTeam";
                 spawnMarker = "Rebelop_1";
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
-                conditions = "license_civ_rebel";
+                conditions = "license_civ_level1";
+            };
+
+            class KinghillBlue {
+                displayName = "Battle-BlueTeam";
+                spawnMarker = "Rebelop_3";
+                icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
+                conditions = "license_civ_level1";
+            };
+
+            class KinghillGreen {
+                displayName = "Battle-GreenTeam";
+                spawnMarker = "Rebelop_4";
+                icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
+                conditions = "license_civ_level1";
             };
 
             class RebelE {
@@ -117,6 +131,37 @@ class CfgSpawnPoints {
             class Pyrgos {
                 displayName = $STR_SP_EMS_Pyr;
                 spawnMarker = "medic_spawn_3";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            //AOSoul Added
+            class Sofia {
+                displayName = $STR_SP_EMS_Sof;
+                spawnMarker = "medic_spawn_4";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            //해난 구조대 스폰지역
+            //Kabala
+            class KavalaW {
+                displayName = $STR_SP_EMS_Kav_W;
+                spawnMarker = "medic_spawn_w_1";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            class PyrgosW {
+                displayName = $STR_SP_EMS_Pyr_W;
+                spawnMarker = "medic_spawn_w_2";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            class AgiaTriadaW {
+                displayName = $STR_SP_EMS_Agia_W;
+                spawnMarker = "medic_spawn_w_3";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
@@ -239,5 +284,105 @@ class CfgSpawnPoints {
         };
 
     };
+	
+	//LosSantos
+    class LosSantos {
 
+        class Civilian {
+            class Georgetown {
+                displayName = "뉴비마을";
+                spawnMarker = "civilian_Spawn_1";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "!license_civ_rebel";
+            };
+        };
+		
+		/*
+		cop_spawn_HQ_1 - 경찰 본부
+		cop_spawn_east_1 - 경찰서 동쪽
+		cop_spawn_North_1 - 경찰서 북쪽		
+		cop_spawn_airHQ_1 - 경찰서 공항
+		Cop_Spawn_Sea_1 - 해양경찰서
+		cop_spawn_Jail_1 - 교도소
+		*/
+        class Cop {
+            class PoliceHQ {
+                displayName = "경찰 본부";
+                spawnMarker = "cop_spawn_HQ_1";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+			
+			class PoliceEast {
+                displayName = "경찰서 - 동쪽";
+                spawnMarker = "cop_spawn_east_1";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+			
+			class PoliceNorth {
+                displayName = "경찰서 - 북쪽";
+                spawnMarker = "cop_spawn_North_1";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+			
+			class PoliceAirHQ {
+                displayName = "공항 경찰서";
+                spawnMarker = "cop_spawn_airHQ_1";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+			
+			class PoliceCoastGuard {
+                displayName = "해양 경찰서";
+                spawnMarker = "Cop_Spawn_Sea_1";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+			
+			class PoliceJail {
+                displayName = "교도소";
+                spawnMarker = "cop_spawn_Jail_1";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+        };
+		
+		/*
+		med_spawn_HQ_1 - 도시 병원
+		med_spawn_east_1 - 동쪽 병원
+		med_spawn_North_1 - 북쪽 병원		
+		med_spawn_AirHQ_1 - 공항 병원
+		*/
+        class Medic {
+            class MedHQ {
+                displayName = "도시 병원";
+                spawnMarker = "med_spawn_HQ_1";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+			
+			class MedEast {
+                displayName = "동쪽 병원";
+                spawnMarker = "med_spawn_east_1";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+			
+			class MedNorth {
+                displayName = "북쪽 병원";
+                spawnMarker = "med_spawn_North_1";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+			
+			class MedAirHQ {
+                displayName = "공항 병원";
+                spawnMarker = "med_spawn_AirHQ_1";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+        };
+    };
 };

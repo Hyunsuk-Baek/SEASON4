@@ -47,10 +47,18 @@ life_deathCamera camCommit 0;
 (findDisplay 7300) displaySetEventHandler ["KeyDown","if ((_this select 1) isEqualTo 1) then {true}"]; //Block the ESC menu
 
 //Create a thread for something?
+
+//AOSOUL Added - Dump Button
+_unit spawn {
+    private ["_dumpButton"];
+    disableSerialization;
+    _dumpButton = ((findDisplay 7300) displayCtrl 7306);
+};
+///////////////////////////////////////////////////////////
 _unit spawn {
     private ["_maxTime","_RespawnBtn","_Timer"];
     disableSerialization;
-    _RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
+    _RespawnBtn = ((findDisplay 7300) displayCtrl 7307);
     _Timer = ((findDisplay 7300) displayCtrl 7301);
     if (LIFE_SETTINGS(getNumber,"respawn_timer") < 5) then {
         _maxTime = time + 5;

@@ -12,7 +12,7 @@ private ["_search","_ui","_progress","_cP","_pgText"];
 if (life_action_inUse) exitWith {hint localize "STR_NOTF_Action"};
 
 _serviceCost = LIFE_SETTINGS(getNumber,"service_chopper");
-_search = nearestObjects[getPos air_sp, ["Air"],10];
+_search = nearestObjects[getPos air_sp, ["Air"],30];
 
 if (count _search isEqualTo 0) exitWith {hint localize "STR_Service_Chopper_NoAir"};
 if (CASH < _serviceCost) exitWith {hint localize "STR_Serive_Chopper_NotEnough"};

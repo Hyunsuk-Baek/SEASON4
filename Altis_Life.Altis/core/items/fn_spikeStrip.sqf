@@ -7,6 +7,11 @@
     Creates a spike strip and preps it.
 */
 private ["_spikeStrip"];
+
+//AOSOUL Added
+if !(playerSide isEqualTo west) exitWith {hint localize "STR_NOTF_NotACop"};
+////////////////////////////////////////////////////////////
+
 if (!isNil "life_action_spikeStripPickup") exitWith {hint localize "STR_ISTR_SpikesDeployment"};    // avoid conflicts with addactions allowing duplication.
 _spikeStrip = "Land_Razorwire_F" createVehicle [0,0,0];
 _spikeStrip attachTo[player,[0,5.5,0]];

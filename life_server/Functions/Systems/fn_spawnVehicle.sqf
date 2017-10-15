@@ -179,11 +179,11 @@ if ((_vInfo select 1) isEqualTo "civ" && (_vInfo select 2) isEqualTo "B_Heli_Lig
     [_vehicle,"civ_littlebird",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 
-if ((_vInfo select 1) isEqualTo "cop" && ((_vInfo select 2)) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F"]) then {
+if ((_vInfo select 1) isEqualTo "cop" && (_vInfo select 2) in ["C_Offroad_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","C_Offroad_02_unarmed_F","I_MRAP_03_F","I_MRAP_03_hmg_F","B_MRAP_01_F","B_MRAP_01_hmg_F","I_Truck_02_covered_F","I_Truck_02_ammo_F","O_Truck_03_ammo_F","B_Truck_01_ammo_F","B_Heli_Light_01_F","I_Heli_Transport_02_F","I_Heli_light_03_unarmed_F","O_Heli_Transport_04_F","O_Heli_Transport_04_covered_F","B_Heli_Transport_03_unarmed_F","B_Heli_Light_01_armed_F","I_Heli_light_03_F","B_Heli_Attack_01_F","B_Heli_Transport_01_F","B_Heli_Transport_03_F","B_Plane_CAS_01_dynamicLoadout_F","B_Plane_Fighter_01_Stealth_F","B_Plane_Fighter_01_F","B_Boat_Transport_01_F","C_Boat_Civil_01_police_F","C_Boat_Civil_01_rescue_F","C_Boat_Transport_02_F","B_Boat_Armed_01_minigun_F","O_Boat_Armed_01_hmg_F","B_SDV_01_F","O_SDV_01_F","I_SDV_01_F"]) then {
     [_vehicle,"cop_offroad",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 
-if ((_vInfo select 1) isEqualTo "med" && (_vInfo select 2) isEqualTo "C_Offroad_01_F") then {
+if ((_vInfo select 1) isEqualTo "med" && (_vInfo select 2) in ["B_Quadbike_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","C_Offroad_02_unarmed_F","C_SUV_01_F","C_Offroad_01_F","C_Van_01_box_F","B_MRAP_01_F","I_MRAP_03_F","I_Truck_02_medical_F","O_Truck_03_medical_F","B_Truck_01_medical_F","I_Truck_02_box_F","O_Truck_03_repair_F","B_Truck_01_Repair_F","B_Truck_01_mover_F","B_Heli_Light_01_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","B_Heli_Transport_01_F","O_Heli_Transport_04_repair_F","O_Heli_Transport_04_fuel_F","O_Heli_Transport_04_covered_F","O_Heli_Transport_04_medevac_F","O_Heli_Transport_04_F"]) then {
     [_vehicle,"med_offroad",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 

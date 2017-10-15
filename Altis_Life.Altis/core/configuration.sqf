@@ -49,6 +49,20 @@ life_civ_position = [];
 life_markers = false;
 life_canpay_bail = true;
 
+//AOSoul Added
+Life_cooking = false;
+Life_fire = false;
+life_jetpack = false;
+Life_fishing = false;
+life_seatbelt = false;
+life_safezone = false;
+life_sitting = false;
+life_CopWarningActive_male = false;
+life_CopWarningActive_female = false;
+life_CopPrisonSong = false;
+life_AOSOUL_Delay = false;
+life_medicjet = false;
+
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
 life_settings_enableSidechannel = profileNamespace getVariable ["life_enableSidechannel",true];
@@ -84,6 +98,7 @@ CASH = 0;
 
 life_istazed = false;
 life_isknocked = false;
+
 life_vehicles = [];
 
 /*

@@ -103,6 +103,18 @@ class Housing {
         class Land_i_Stone_HouseSmall_V2_F : Land_i_Stone_HouseSmall_V1_F{};
         class Land_i_Stone_HouseSmall_V3_F : Land_i_Stone_HouseSmall_V1_F{};
 
+        //AOSoul Added
+        class Land_i_House_Big_02_b_pink_F {
+            price = 1550000;
+            numberCrates = 3;
+            restrictedPos[] = {0,1,2,3,4};
+            canGarage = false;
+            garageSpawnPos[] = {};
+            garageSpawnDir = 0;
+            garageBlacklists[] = {};
+            lightPos[] = {2,0,3.5};
+        };
+
     };
 
     class Tanoa {
@@ -285,6 +297,152 @@ class Housing {
             lightPos[] = {1.2,0.2,2.5};
         };
 
+    };
+	
+	//LosSantos
+	//집에 연결된 차고 가격은 Config_Master.cpp 파일 houseGarage 수정하기
+	//차고형태로 판매되는 아이템은 Config_Garages.hpp 파일에서 수정하기, 가격 100만원 이하로(안그럼 가격 표기 오류 남)
+	//garageSpawnPos[] = {x, y, z};
+	class LosSantos {
+		//바닐라
+		class Land_i_House_Big_02_V1_F {
+            price = 1550000;
+            numberCrates = 3;
+            restrictedPos[] = {0,1,2,3,4};
+            canGarage = false;
+            garageSpawnPos[] = {};
+            garageSpawnDir = 0;
+            garageBlacklists[] = {};
+            lightPos[] = {2,0,3.5};
+        };
+        
+        class Land_i_House_Big_02_V2_F : Land_i_House_Big_02_V1_F{};
+        class Land_i_House_Big_02_V3_F : Land_i_House_Big_02_V1_F{};
+
+        class Land_i_House_Big_01_V1_F {
+            price = 2200000;
+            numberCrates = 4;
+            restrictedPos[] = {2,3};
+            canGarage = false;
+            garageSpawnPos[] = {};
+            garageSpawnDir = 0;
+            garageBlacklists[] = {};
+            lightPos[] = {0,-2,3.8};
+        };
+
+        class Land_i_House_Big_01_V2_F : Land_i_House_Big_01_V1_F{};
+        class Land_i_House_Big_01_V3_F : Land_i_House_Big_01_V1_F{};
+
+        class Land_i_House_Small_01_V1_F {
+            price = 1050000;
+            numberCrates = 2;
+            restrictedPos[] = {};
+            canGarage = false;
+            garageSpawnPos[] = {};
+            garageSpawnDir = 0;
+            garageBlacklists[] = {};
+            lightPos[] = {-1.5,0,2};
+        };
+
+        class Land_i_House_Small_01_V2_F : Land_i_House_Small_01_V1_F{};
+        class Land_i_House_Small_01_V3_F : Land_i_House_Small_01_V1_F{};
+
+        class Land_i_House_Small_02_V1_F {
+            price = 1000500;
+            numberCrates = 2;
+            restrictedPos[] = {};
+            canGarage = false;
+            garageSpawnPos[] = {};
+            garageSpawnDir = 0;
+            garageBlacklists[] = {};
+            lightPos[] = {2,0,2.4};
+        };
+
+        class Land_i_House_Small_02_V2_F : Land_i_House_Small_02_V1_F{};
+        class Land_i_House_Small_02_V3_F : Land_i_House_Small_02_V1_F{};
+
+        class Land_i_House_Small_03_V1_F {
+            price = 1250000;
+            numberCrates = 3;
+            restrictedPos[] = {};
+            canGarage = false;
+            garageSpawnPos[] = {};
+            garageSpawnDir = 0;
+            garageBlacklists[] = {};
+            lightPos[] = {-3.3,1,2.5};
+        };
+
+        class Land_i_House_Small_03_V3_F : Land_i_House_Small_03_V1_F{};
+
+        class Land_i_Stone_HouseSmall_V1_F {
+            price = 750000;
+            numberCrates = 1;
+            restrictedPos[] = {0,1,3,4};
+            canGarage = false;
+            garageSpawnPos[] = {};
+            garageSpawnDir = 0;
+            garageBlacklists[] = {};
+            lightPos[] = {0.90,2.3,4};
+        };
+		
+		//에드온
+		//호주 일반형
+		//정면기준 오른쪽 (스폰 y 값 앞으로, x 값 반대로)
+		class Land_HouseA {
+            price = 1000000;
+            numberCrates = 3;
+            restrictedPos[] = {0,1,3,4};
+            canGarage = true;
+            garageSpawnPos[] = {5,-13,0.4};	//defalut : {5, -13, 0.4}
+            garageSpawnDir = 180;
+            garageBlacklists[] = {};
+            lightPos[] = {0,1,3};
+        };
+		class Land_HouseA1 : Land_HouseA{};
+		class Land_HouseB : Land_HouseA{};
+		class Land_HouseB1 : Land_HouseA{};
+		class Land_HouseC_R : Land_HouseA{};
+		
+		//정면기준 왼쪽
+        class Land_HouseA1_L {
+            price = 1000000;
+            numberCrates = 3;
+            restrictedPos[] = {0,1,3,4};
+            canGarage = true;
+            garageSpawnPos[] = {-4,-13,0.4};	//defalut : {-4, -13, 0.4}
+            garageSpawnDir = 180;
+            garageBlacklists[] = {};
+            lightPos[] = {0,1,3};
+        };
+		class Land_HouseB1_L : Land_HouseA1_L{};
+		class Land_HouseC1_L : Land_HouseA1_L{};
+		
+		//호주 고급형
+		//정면 기준 왼쪽
+		//Residential Double AL, Residential Double AL 2,
+        class Land_HouseDoubleAL {
+            price =3000000;
+            numberCrates = 5;
+            restrictedPos[] = {0,1,3,4};
+            canGarage = true;
+            garageSpawnPos[] = {-6,-20,0.4};	//default {-6, -20, 0.2}
+            garageSpawnDir = 180;
+            garageBlacklists[] = {};
+            lightPos[] = {0,1,4.5};
+        };
+        class Land_HouseDoubleAL2 : Land_HouseDoubleAL{};
+		
+		//EM 빌딩 고급 빌라
+		class Land_em_mansion_01_reversed {
+            price =5000000;
+            numberCrates = 10;
+            restrictedPos[] = {0,1,3,4};
+            canGarage = false;
+            garageSpawnPos[] = {};
+            garageSpawnDir = 0;
+            garageBlacklists[] = {};
+            lightPos[] = {2,0,4};
+        };
     };
 
 };

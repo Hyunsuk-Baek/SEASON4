@@ -4552,6 +4552,9 @@
             <Russian>Захват шайка укрытие</Russian>
             <German>Gangversteck einnehmen</German>
         </Key>
+        <Key ID="STR_NOTF_couldNotGiveItem">
+        	<Original>이아이템은 남에게 줄 수 없습니다.</Original>
+        </Key>
     </Package>
     <Package name="News_Strings">
         <Key ID="STR_News_AddAction">
@@ -5740,7 +5743,7 @@
             <Polish>Dzwięk został ustawiony w tryb wyciszony!</Polish>
         </Key>
         <Key ID="STR_MISC_overviewText">
-            <Original>An RPG game mode developed by Tonic.</Original>
+            <Original>AOSoul 라이프 시즌3 카페/공지확인 필수</Original>
             <Czech>Mód RPG hra vyvinutá Tonic.</Czech>
             <French>Un mode de jeu de RPG développé par Tonic.</French>
             <Spanish>Un modo de juego de rol desarrollado por Tonic.</Spanish>
@@ -6979,6 +6982,9 @@
             <Portuguese>Tapete de Espinhos</Portuguese>
             <Polish>Kolczatka drogowa</Polish>
         </Key>
+        <Key ID="STR_Item_broadcastmic">
+            <Original>뉴스마이크</Original>
+        </Key>
     </Package>
     <Package name="Life_License">
         <Key ID="STR_License_Driver">
@@ -7201,6 +7207,27 @@
             <Portuguese>Licença de Casas</Portuguese>
             <Polish>Zarządca nieruchomości</Polish>
         </Key>
+                
+        <Key ID="STR_License_Level1">
+            <Original>Level 1</Original>
+        </Key>
+        
+        <Key ID="STR_License_Level2">
+            <Original>Level 2</Original>
+        </Key>
+        
+        <Key ID="STR_License_Level3">
+            <Original>Level 3</Original>
+        </Key>
+        
+        <Key ID="STR_License_Level4">
+            <Original>Level 4</Original>
+        </Key>
+        
+        <Key ID="STR_License_Level5">
+            <Original>Level 5</Original>
+        </Key>
+        
     </Package>
     <Package name="More_Item_Strings">
         <Key ID="STR_ISTR_Blast_VaultOnly">
@@ -7698,6 +7725,9 @@
             <Portuguese>Esse item não é usável.</Portuguese>
             <Polish>Nie można użyć tej rzeczy.</Polish>
         </Key>
+        <Key ID="STR_ISTR_DrugEffect">
+            <Original>너는 약쟁이!!! 갈증은 50퍼센트 줄지만 8분간 뛸수있다!!</Original>
+        </Key>
     </Package>
     <Package name="Process_Action">
         <Key ID="STR_Process_Oil">
@@ -7923,7 +7953,7 @@
             <Polish>Odrodzenie możliwe za: %1</Polish>
         </Key>
         <Key ID="STR_Medic_Respawn_2">
-            <Original>You can now respawn</Original>
+            <Original>리스폰가능:리퀘스트한경우 리스폰NO!</Original>
             <Czech>Nyní lze respawn</Czech>
             <Spanish>Ya puedes reaparecer</Spanish>
             <Russian></Russian>
@@ -9725,7 +9755,7 @@
             <Polish>Kopalnia diamentów</Polish>
         </Key>
         <Key ID="STR_MAR_General_Store">
-            <Original>General Store</Original>
+            <Original>잡화점</Original>
             <Czech>Obchod se smíšeným zbožím</Czech>
             <French>Magasin général</French>
             <Spanish>Tienda General</Spanish>
@@ -9747,7 +9777,7 @@
             <Polish>Sklepy dla cywilów</Polish>
         </Key>
         <Key ID="STR_MAR_Boat_Shop">
-            <Original>Boat Shop</Original>
+            <Original>보트 상점</Original>
             <Czech>Lodní Shop</Czech>
             <French>Concessionnaire de bateaux</French>
             <Spanish>Tienda de Barcos</Spanish>
@@ -9758,7 +9788,7 @@
             <Polish>Sklep z łodziami</Polish>
         </Key>
         <Key ID="STR_MAR_Bruce_Outfits">
-            <Original>Bruce's Outback Outfits</Original>
+            <Original>옷 상점</Original>
             <Czech>Bruceovy Outback Oblečení</Czech>
             <French>Vêtements de Bruce</French>
             <Spanish>Tienda de Ropa</Spanish>
@@ -9769,7 +9799,7 @@
             <German>Bruce's Outback Outfits</German>
         </Key>
         <Key ID="STR_MAR_Apple_Field">
-            <Original>Apple Field</Original>
+            <Original>사과 채집 지역</Original>
             <Czech>Apple Field</Czech>
             <French>Champs de Pommes</French>
             <Spanish>Campo de Manzanas</Spanish>
@@ -9780,7 +9810,7 @@
             <Polish>Sad jabłkowy</Polish>
         </Key>
         <Key ID="STR_MAR_Peaches_Field">
-            <Original>Peaches Field</Original>
+            <Original>복숭아 채집 지역</Original>
             <Czech>broskve Field</Czech>
             <French>Champs de Pêches</French>
             <Spanish>Campo de Melocotones</Spanish>
@@ -9791,7 +9821,7 @@
             <Polish>Sad brzoskwiniowy</Polish>
         </Key>
         <Key ID="STR_MAR_Market">
-            <Original>Market</Original>
+            <Original>마켓</Original>
             <Czech>Trh</Czech>
             <French>Marché</French>
             <Spanish>Mercado</Spanish>
@@ -9824,7 +9854,7 @@
             <Polish>Maszt nadawczy</Polish>
         </Key>
         <Key ID="STR_MAR_DMV">
-            <Original>DMV</Original>
+            <Original>라이센스 상점</Original>
             <Czech>DMV</Czech>
             <French>Magasin de licences</French>
             <Spanish>Registro de Licencias</Spanish>
@@ -9835,7 +9865,7 @@
             <Italian>Licenze</Italian>
         </Key>
         <Key ID="STR_MAR_Delivery_Missions">
-            <Original>Delivery Missions</Original>
+            <Original>배달미션</Original>
             <Czech>Dodací mise</Czech>
             <French>Missions de livraison</French>
             <Spanish>Misiones de Entrega</Spanish>
@@ -9868,7 +9898,7 @@
             <Italian>Ottieni una missione postale</Italian>
         </Key>
         <Key ID="STR_MAR_Diving_Shop">
-            <Original>Diving Shop</Original>
+            <Original>다이빙 상점</Original>
             <Czech>Potápění Shop</Czech>
             <French>Boutique de plongée</French>
             <Spanish>Tienda de Buceo</Spanish>
@@ -9879,7 +9909,7 @@
             <Italian>Negozio da Sub</Italian>
         </Key>
         <Key ID="STR_MAR_Drug_Dealer">
-            <Original>Drug Dealer</Original>
+            <Original>마약 딜러</Original>
             <Czech>Drug prodejce</Czech>
             <French>Dealeur de drogue</French>
             <Spanish>Narcotraficante</Spanish>
@@ -10571,6 +10601,15 @@
             <Polish>Zapłać kaucję</Polish>
             <Italian>Paga cauzione</Italian>
         </Key>
+        
+        <!--  AOSoul Added  -->
+        <Key ID="STR_MAR_FED_aoscasino">
+            <Original>Federal Reserve - AOSoul Casino</Original>
+        </Key>
+        <Key ID="STR_MAR_FED_illcasino">
+            <Original>Federal Reserve - illegal Casino</Original>
+        </Key>
+        
     </Package>
     <Package name="displayNames">
         <Key ID="STR_C_Remove_uniforms">
@@ -10815,6 +10854,18 @@
             <Portuguese>Pyrgos Hospital</Portuguese>
             <Polish>Pyrgos Hospital</Polish>
         </Key>
+		<Key ID="STR_SP_EMS_Sof">
+            <Original>Sofia Hospital</Original>
+        </Key>
+		<Key ID="STR_SP_EMS_Kav_W">
+            <Original>Kavala Coast</Original>
+        </Key>
+		<Key ID="STR_SP_EMS_Pyr_W">
+            <Original>Pyrgos Coast</Original>
+        </Key>
+		<Key ID="STR_SP_EMS_Agia_W">
+            <Original>AgiaTriada Coast</Original>
+        </Key>
         <Key ID="STR_SP_EMS_SE">
             <Original>South East Hospital</Original>
             <Czech>South East Hospital</Czech>
@@ -10873,7 +10924,7 @@
     </Package>
     <Package name="Crimes">
         <Key ID="STR_Crime_187V">
-            <Original>Vehicular Manslaughter</Original>
+            <Original>로드킬</Original>
             <Czech>dopravní zabití</Czech>
             <French>Vol de véhicule</French>
             <Spanish>Homicidio Vehicular</Spanish>
@@ -10884,7 +10935,7 @@
             <German>Fahrlässige Tötung</German>
         </Key>
         <Key ID="STR_Crime_187">
-            <Original>Manslaughter</Original>
+            <Original>살인</Original>
             <Czech>Zabití</Czech>
             <French>Homicide involontaire</French>
             <Spanish>Homicidio</Spanish>
@@ -10895,7 +10946,7 @@
             <German>Totschlag</German>
         </Key>
         <Key ID="STR_Crime_901">
-            <Original>Escaping Jail</Original>
+            <Original>탈옥</Original>
             <Czech>Jak uniknout vězení</Czech>
             <French>Evasion de prison</French>
             <Spanish>Escaparse de la Cárcel</Spanish>
@@ -10906,7 +10957,7 @@
             <German>Ausbruch</German>
         </Key>
         <Key ID="STR_Crime_215">
-            <Original>Attempted Auto Theft</Original>
+            <Original>차량절도미수</Original>
             <Czech>Pokusili Theft Auto</Czech>
             <French>Tentative de vol de véhicule</French>
             <Spanish>Atentado: Robo de Vehículo</Spanish>
@@ -10917,7 +10968,7 @@
             <German>Versuchter Autodiebstahl</German>
         </Key>
         <Key ID="STR_Crime_213">
-            <Original>Use of illegal explosives</Original>
+            <Original>불법폭탄물사용</Original>
             <Czech>Používání nelegálních výbušnin</Czech>
             <French>Utilisation d'explosifs illégaux</French>
             <Spanish>Uso de Explosivos Ilegales</Spanish>
@@ -10928,7 +10979,7 @@
             <German>Verwendung von illegalen Sprengstoff</German>
         </Key>
         <Key ID="STR_Crime_211">
-            <Original>Robbery</Original>
+            <Original>강도</Original>
             <Czech>Loupež</Czech>
             <French>Vol</French>
             <Spanish>Robo</Spanish>
@@ -10939,7 +10990,7 @@
             <German>Raub</German>
         </Key>
         <Key ID="STR_Crime_207">
-            <Original>Kidnapping</Original>
+            <Original>납치</Original>
             <Czech>Únos</Czech>
             <French>Enlèvement</French>
             <Spanish>Secuestro</Spanish>
@@ -10950,7 +11001,7 @@
             <German>Entführung</German>
         </Key>
         <Key ID="STR_Crime_207A">
-            <Original>Attempted Kidnapping</Original>
+            <Original>납치미수</Original>
             <Czech>pokus o únos</Czech>
             <French>Tentative de kidnapping</French>
             <Spanish>Atentado: Secuestro</Spanish>
@@ -10961,7 +11012,7 @@
             <Polish>Próba porwania</Polish>
         </Key>
         <Key ID="STR_Crime_390">
-            <Original>Public Intoxication</Original>
+            <Original>마약흡입</Original>
             <Czech>veřejné Intoxikace</Czech>
             <French>Intoxication publique</French>
             <Spanish>Intoxicación Pública</Spanish>
@@ -10972,7 +11023,7 @@
             <Polish>Upojenie publiczny</Polish>
         </Key>
         <Key ID="STR_Crime_487">
-            <Original>Grand Theft</Original>
+            <Original>기물파손</Original>
             <Czech>velká loupež</Czech>
             <French>Vol de voiture</French>
             <Spanish>Robo Mayor</Spanish>
@@ -10983,7 +11034,7 @@
             <German>Auto Diebstahl</German>
         </Key>
         <Key ID="STR_Crime_488">
-            <Original>Petty Theft</Original>
+            <Original>못생김</Original>
             <Czech>Petty Theft</Czech>
             <French>Petit vol</French>
             <Spanish>Robo Menor</Spanish>
@@ -10994,7 +11045,7 @@
             <German>Kleiner Diebstahl</German>
         </Key>
         <Key ID="STR_Crime_480">
-            <Original>Hit and run</Original>
+            <Original>아리랑치기</Original>
             <Czech>Zavinit nehodu a ujet</Czech>
             <French>Délit de fuite</French>
             <Spanish>Pega y Corre</Spanish>
@@ -11005,7 +11056,7 @@
             <German>Fahrerflucht</German>
         </Key>
         <Key ID="STR_Crime_481">
-            <Original>Drug Possession</Original>
+            <Original>불법물품소지</Original>
             <Czech>držení drog</Czech>
             <French>Possession de drogue</French>
             <Spanish>Posesión de Drogas</Spanish>
@@ -11016,7 +11067,7 @@
             <German>Drogenbesitz</German>
         </Key>
         <Key ID="STR_Crime_482">
-            <Original>Intent to distribute</Original>
+            <Original>불법물품밀매</Original>
             <Czech>Intent distribuovat</Czech>
             <French>Intention de distribuer</French>
             <Spanish>Intención de Distribuir</Spanish>
@@ -11027,7 +11078,7 @@
             <Polish>Zamiarem dystrybucji</Polish>
         </Key>
         <Key ID="STR_Crime_483">
-            <Original>Drug Trafficking</Original>
+            <Original>마약밀매</Original>
             <Czech>Obchodování s drogami</Czech>
             <French>Trafic de drogue</French>
             <Spanish>Tráfico de Drogas</Spanish>
@@ -11038,7 +11089,7 @@
             <Polish>Handel narkotykami</Polish>
         </Key>
         <Key ID="STR_Crime_459">
-            <Original>Burglary</Original>
+            <Original>빈집털이</Original>
             <Czech>loupež</Czech>
             <French>Cambriolage</French>
             <Spanish>Robo de Casa</Spanish>
@@ -11049,7 +11100,7 @@
             <German>Einbruch</German>
         </Key>
         <Key ID="STR_Crime_666">
-            <Original>Tax Evasion</Original>
+            <Original>탈세</Original>
             <Czech>Daňový únik</Czech>
             <French>Évasion fiscale</French>
             <Spanish>Evadir Impuestos</Spanish>
@@ -11060,7 +11111,7 @@
             <Polish>Unikanie podatków</Polish>
         </Key>
         <Key ID="STR_Crime_667">
-            <Original>Terrorism</Original>
+            <Original>테러</Original>
             <Czech>Terorismus</Czech>
             <French>Terrorisme</French>
             <Spanish>Terrorismo</Spanish>
@@ -11071,7 +11122,7 @@
             <Polish>Terroryzm</Polish>
         </Key>
         <Key ID="STR_Crime_668">
-            <Original>Unlicensed Hunting</Original>
+            <Original>밀렵</Original>
             <Czech>Volně prodejné Hunting</Czech>
             <French>Chasse sans licence</French>
             <Spanish>Caza sin Licencia</Spanish>
@@ -11082,7 +11133,7 @@
             <Polish>Polowanie nielicencjonowane</Polish>
         </Key>
         <Key ID="STR_Crime_919">
-            <Original>Organ Theft</Original>
+            <Original>장기밀매</Original>
             <Czech>Organ Krádež</Czech>
             <French>Vol d'organes</French>
             <Spanish>Robo de Organos</Spanish>
@@ -11093,7 +11144,7 @@
             <German>Organ Diebstahl</German>
         </Key>
         <Key ID="STR_Crime_919A">
-            <Original>Attempted Organ Theft</Original>
+            <Original>장기밀매시도</Original>
             <Czech>Pokus o krádež Organ</Czech>
             <French>Tentative de vol d'organes</French>
             <Spanish>Atentado: Robo de Organos</Spanish>
@@ -11104,7 +11155,7 @@
             <German>Versuchter Organ Diebstahl</German>
         </Key>
         <Key ID="STR_Crime_1">
-            <Original>Driving without license</Original>
+            <Original>무면허운전</Original>
             <Czech>Jízda bez povolení</Czech>
             <Spanish>Conducir sin Licencia</Spanish>
             <Russian></Russian>
@@ -11115,7 +11166,7 @@
             <Polish>Jazda bez licencji</Polish>
         </Key>
         <Key ID="STR_Crime_2">
-            <Original>Driving on the wrong side of the road</Original>
+            <Original>중앙선위반</Original>
             <Czech>Jízda v špatným směrem do ulice</Czech>
             <Spanish>Conducir en el lado incorrecto de la calle</Spanish>
             <Russian></Russian>
@@ -11126,7 +11177,7 @@
             <German>Fahren in die falsche Richtung der Straße</German>
         </Key>
         <Key ID="STR_Crime_3">
-            <Original>Not respecting the signalizations</Original>
+            <Original>신호위반</Original>
             <Czech>Nerespektování signalizací</Czech>
             <Spanish>No respetar las señales</Spanish>
             <Russian></Russian>
@@ -11137,7 +11188,7 @@
             <Polish>Nie przestrzegając sygnalizacji czy</Polish>
         </Key>
         <Key ID="STR_Crime_4">
-            <Original>Speeding</Original>
+            <Original>기물파손</Original>
             <Czech>rychlá jízda</Czech>
             <Spanish>Exceso de Velocidad</Spanish>
             <Russian></Russian>
@@ -11148,7 +11199,7 @@
             <Polish>Przyśpieszenie</Polish>
         </Key>
         <Key ID="STR_Crime_5">
-            <Original>No headlight in the night</Original>
+            <Original>야간주행비점등</Original>
             <Czech>No světel v noci</Czech>
             <Spanish>Manejar sin luces en la noche</Spanish>
             <Russian></Russian>
@@ -11159,7 +11210,7 @@
             <Polish>Brak świateł w nocy</Polish>
         </Key>
         <Key ID="STR_Crime_6">
-            <Original>Driving kart without helmet</Original>
+            <Original>헬멧미착용(카트)</Original>
             <Czech>Hnací motokáru bez helmy</Czech>
             <Spanish>Manejar un Kart sin casco</Spanish>
             <Russian></Russian>
@@ -11170,7 +11221,7 @@
             <Polish>Jazda bez kasku gokarta</Polish>
         </Key>
         <Key ID="STR_Crime_7">
-            <Original>Badly parked vehicle</Original>
+            <Original>불법주차</Original>
             <Czech>Špatně zaparkované vozidlo</Czech>
             <Spanish>Vehículo mal estacionado</Spanish>
             <Russian></Russian>
@@ -11181,7 +11232,7 @@
             <Polish>Źle zaparkowany samochód</Polish>
         </Key>
         <Key ID="STR_Crime_8">
-            <Original>Rebel vehicle (Not armed)</Original>
+            <Original>반군차량소지</Original>
             <Czech>Rebel vozidla (není ozbrojený)</Czech>
             <Spanish>Vehículo Rebelde (No Armado)</Spanish>
             <Russian></Russian>
@@ -11192,7 +11243,7 @@
             <Polish>Rebel pojeździe (nie czuwa)</Polish>
         </Key>
         <Key ID="STR_Crime_9">
-            <Original>Grand Theft (Civilian Vehicle)</Original>
+            <Original>시민차량절도</Original>
             <Czech>Grand Theft (Civilian Vehicle)</Czech>
             <Spanish>Robo Mayor (Vehículo Civil)</Spanish>
             <Russian></Russian>
@@ -11204,7 +11255,7 @@
 
         </Key>
         <Key ID="STR_Crime_10">
-            <Original>Grand Theft (Military Vehicle)</Original>
+            <Original>공무차량절도</Original>
             <Czech>Grand Theft (Military Vehicle)</Czech>
             <Spanish>Robo Mayor (Vehículo Militar)</Spanish>
             <Russian></Russian>
@@ -11215,7 +11266,7 @@
             <Polish>Grand Theft (pojazd wojskowy)</Polish>
         </Key>
         <Key ID="STR_Crime_11">
-            <Original>Armored Vehicle</Original>
+            <Original>무장차량소유</Original>
             <Czech>obrněné vozidlo</Czech>
             <Spanish>Vehículo Blindado</Spanish>
             <Russian></Russian>
@@ -11226,7 +11277,7 @@
             <Polish>Opancerzony pojazd</Polish>
         </Key>
         <Key ID="STR_Crime_12">
-            <Original>Flying over the city without authorization</Original>
+            <Original>무허가상공비행</Original>
             <Czech>Létání nad městem bez povolení</Czech>
             <Spanish>Volar sobre la ciudad sin autorización</Spanish>
             <Russian></Russian>
@@ -11237,7 +11288,7 @@
             <Polish>Latające nad miastem bez zezwolenia</Polish>
         </Key>
         <Key ID="STR_Crime_13">
-            <Original>Closing the street without authorization</Original>
+            <Original>불법도로점거</Original>
             <Czech>Uzavření ulici bez povolení</Czech>
             <Spanish>Cerrar las calles sin autorización</Spanish>
             <Russian></Russian>
@@ -11248,7 +11299,7 @@
             <Polish>Zamknięcie ulicy bez zezwolenia</Polish>
         </Key>
         <Key ID="STR_Crime_14">
-            <Original>Open carry in city (Legal Weapon)</Original>
+            <Original>마을내총기소지</Original>
             <Czech>open carry ve městě (právní Weapon)</Czech>
             <Spanish>Cargar Arma Abiertamente en la Ciudad (Arma Legal)</Spanish>
             <Italian>Aprire il trasporto in città (Arma Legale)</Italian>
@@ -11259,7 +11310,7 @@
             <German>Offenes Tragen einer legalen Waffe in der Stadt</German>
         </Key>
         <Key ID="STR_Crime_15">
-            <Original>Rebel weapon</Original>
+            <Original>불법무기소지</Original>
             <Czech>Rebel zbraň</Czech>
             <Spanish>Arma Rebelde</Spanish>
             <Russian></Russian>
@@ -11270,7 +11321,7 @@
             <Polish>Rebel bronią</Polish>
         </Key>
         <Key ID="STR_Crime_16">
-            <Original>Illegal clothing</Original>
+            <Original>불법의상착용</Original>
             <Czech>Nelegální oblečení</Czech>
             <Spanish>Ropa Ilegal</Spanish>
             <Italian>abbigliamento illegale</Italian>
@@ -11281,7 +11332,7 @@
             <German>Illegale Kleidung</German>
         </Key>
         <Key ID="STR_Crime_17">
-            <Original>Hiding face (Mask)</Original>
+            <Original>노상방뇨</Original>
             <Czech>Schovává tvář (Mask)</Czech>
             <Spanish>Ocultar su Cara (Máscara)</Spanish>
             <Italian>Nascondere faccia (Mask)</Italian>
@@ -11292,7 +11343,7 @@
             <German>Verstecken des Gesichts (Maske)</German>
         </Key>
         <Key ID="STR_Crime_18">
-            <Original>Refuses to cooperate</Original>
+            <Original>공무집행방해</Original>
             <Czech>Odmítá spolupracovat</Czech>
             <Spanish>Reusa a Cooperar</Spanish>
             <Italian>Si rifiuta di collaborare</Italian>
@@ -11303,7 +11354,7 @@
             <German>Behinderung der Staatsgewalt</German>
         </Key>
         <Key ID="STR_Crime_19">
-            <Original>Hit and run</Original>
+            <Original>폭행도주</Original>
             <Czech>Zavinit nehodu a ujet</Czech>
             <Spanish>Golpea y Corre</Spanish>
             <Italian>Mordi e fuggi</Italian>
@@ -11314,7 +11365,7 @@
             <German>Fahrerflucht</German>
         </Key>
         <Key ID="STR_Crime_20">
-            <Original>Insulting a civilian</Original>
+            <Original>명예훼손모욕</Original>
             <Czech>Urážky civilní</Czech>
             <Spanish>Insultar a un Civil</Spanish>
             <Russian></Russian>
@@ -11325,7 +11376,7 @@
             <Polish>Obrażanie cywilem</Polish>
         </Key>
         <Key ID="STR_Crime_21">
-            <Original>Insulting a soldier</Original>
+            <Original>공무원모욕</Original>
             <Czech>Urážky vojáka</Czech>
             <Spanish>Insultar a un Soldado</Spanish>
             <Russian></Russian>
@@ -11336,7 +11387,7 @@
             <Polish>Znieważenie żołnierza</Polish>
         </Key>
         <Key ID="STR_Crime_22">
-            <Original>Drug dealing</Original>
+            <Original>마약밀거래</Original>
             <Czech>Urážky vojáka...</Czech>
             <Spanish>Venta de Drogas</Spanish>
             <Russian></Russian>
@@ -11347,7 +11398,7 @@
             <Polish>Handel narkotykami</Polish>
         </Key>
         <Key ID="STR_Crime_23">
-            <Original>Federal Reserve breaking</Original>
+            <Original>은행털이</Original>
             <Czech>Federální rezervní systém lámání</Czech>
             <Spanish>Entrar a la Reserva Federal</Spanish>
             <Russian></Russian>
@@ -11358,7 +11409,7 @@
             <Polish>Rezerwa Federalna łamanie</Polish>
         </Key>
         <Key ID="STR_Crime_24">
-            <Original>Killing of a civilian</Original>
+            <Original>살인</Original>
             <Czech>Zabíjení civilní</Czech>
             <Spanish>Homicidio de un Civil</Spanish>
             <Italian>Uccisione di un civile</Italian>
@@ -11369,7 +11420,7 @@
             <German>Töten eines Zivilen</German>
         </Key>
         <Key ID="STR_Crime_25">
-            <Original>Killing of a soldier</Original>
+            <Original>살인</Original>
             <Czech>Zabití vojáka</Czech>
             <Spanish>Homicidio de un Soldado</Spanish>
             <Russian></Russian>
@@ -11378,6 +11429,15 @@
             <German>Töten eines Beamten</German>
             <Italian>Omicidio di un agente</Italian>
             <Polish>Zabijając żołnierza</Polish>
+        </Key>
+        <Key ID="STR_Crime_26">
+            <Original>주유소강도</Original>
+        </Key>
+        <Key ID="STR_Crime_27">
+            <Original>주유강도미수</Original>
+        </Key>
+		<Key ID="STR_Crime_28">
+            <Original>불법카지노 이용</Original>
         </Key>
     </Package>
     <Package name="FuelTank_Mission">
@@ -11492,7 +11552,7 @@
             <Portuguese>Esse posto é abastecido através de uma mangueira.</Portuguese>
         </Key>
         <Key ID="STR_FuelTank_Stopped">
-            <Original>Discontinued operation.</Original>
+            <Original>급유를 할 수 없습니다. 시동을 끄시거나 차량을 움직이지 마세요.</Original>
             <Czech>Ukončená činnost.</Czech>
             <French>Activité abandonnée.</French>
             <Spanish>Operación discontinuada.</Spanish>
@@ -12142,4 +12202,75 @@
             <German>%1 - %2 hat $%3 auf sein Bankkonto eingezahlt. Bankkonto: $%4  Bargeld: $%5</German>
         </Key>
     </Package>
+	<Package name="AOSOUL_Custom">
+        <Key ID="STR_AOSOUL_Items_huntingkit">
+            <Original>Hunting Kit</Original>
+        </Key>
+        <Key ID="STR_AOSOUL_Items_Firewood">
+            <Original>캠프파이어 장작</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_Items_StringFishing">
+            <Original>줄 낚시 도구</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_Items_electricfishing">
+            <Original>폭파 낚시 도구</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_Items_Handcuffs">
+            <Original>수갑</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_Items_keys">
+            <Original>수갑 열쇠</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_Items_vehiclecutter">
+            <Original>차량 절단기</Original>
+        </Key>
+		<Key ID="STR_Cook_Closer">
+            <Original>요리를 하려면 불 가까이 가세요!!</Original>
+        </Key>
+        <Key ID="STR_Cook_Light">
+            <Original>요리를 하려면 불을 먼저 켜야 합니다!!</Original>
+        </Key>
+        <Key ID="STR_Cook_Sitting">
+            <Original>요리를 하려면 불 가까이 앉으세요!! (앉는 키는 ' 입니다.)</Original>
+        </Key>
+        <Key ID="STR_Cook_Closer2">
+            <Original>요리는 모닥불 주변 3m 에서만 가능합니다!!</Original>
+        </Key>
+        <Key ID="STR_Cook_Cooked">
+            <Original>%1 를 완성했습니다!!</Original>
+        </Key>
+		<Key ID="STR_Garage_Title_air">
+            <Original>비행기 차고</Original>
+        </Key>
+		<Key ID="STR_Fishing_Error">
+            <Original>육지에서 서 있는 상태에서만 사용 가능합니다</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_SafeZone">
+            <Original>세이프존에서는 사용할 수 없습니다.</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_CopWarning_Male_On">
+            <Original>확성기(남성) On</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_CopWarning_Male_Off">
+            <Original>확성기(남성) Off</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_CopWarning_Female_On">
+            <Original>확성기(여성) On</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_CopWarning_Female_Off">
+            <Original>확성기(여성) Off</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_LowLevel">
+            <Original>짬 나노입자는 사용할 수 없습니다</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_Marker_W_Hospital">
+            <Original>해난 구조대</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_Animal_Snake_Raw">
+            <Original>뱀(날것)</Original>
+        </Key>
+		<Key ID="STR_AOSOUL_Animal_Snake_Meat">
+            <Original>뱀 고기</Original>
+        </Key>
+	</Package>
 </Project>

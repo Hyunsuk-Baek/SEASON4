@@ -15,8 +15,9 @@ params [
 
 private _altisArray = [16019.5,16952.9,0];
 private _tanoaArray = [11074.2,11501.5,0.00137329];
+private _lossantosArray = [8482.72,3468.58,32.393];
 
-private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
+private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray], ["LosSantos", _lossantosArray]]] call TON_fnc_terrainSort;
 
 private _dome = nearestObject [_pos,"Land_Dome_Big_F"];
 

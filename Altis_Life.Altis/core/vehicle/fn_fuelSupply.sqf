@@ -26,7 +26,7 @@ if (isNil {_vehicle getVariable "fuelTank"}) then{
 _another = false;
 {
     if (!isNil {_x getVariable "fuelTankWork"}) exitWith {_another};
-} forEach (nearestObjects [_vehicle, ["C_Van_01_fuel_F","I_Truck_02_fuel_F","B_Truck_01_fuel_F"], 100]);
+} forEach (nearestObjects [_vehicle, ["C_Van_01_fuel_F","I_Truck_02_fuel_F","B_Truck_01_fuel_F","O_Truck_03_fuel_F"], 100]);
 
 if (_another)exitWith{titleText[localize "STR_FuelTank_AnotherInUse","PLAIN"];life_action_inUse = false;};
 

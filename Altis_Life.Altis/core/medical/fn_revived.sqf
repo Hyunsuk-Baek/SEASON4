@@ -31,6 +31,7 @@ if (BANK > _reviveCost) then {
 //Bring me back to life.
 player setDir _dir;
 player setPosASL (visiblePositionASL life_corpse);
+player setDamage 0.8;
 life_corpse setVariable ["Revive",nil,true];
 life_corpse setVariable ["name",nil,true];
 [life_corpse] remoteExecCall ["life_fnc_corpse",RANY];

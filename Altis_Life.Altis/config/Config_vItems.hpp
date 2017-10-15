@@ -11,23 +11,23 @@ class VirtualShops {
     //Virtual Shops
     class market {
         name = "STR_Shops_Market";
-        side = "civ";
+        side = "";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "salema", "ornate", "mackerel", "tuna", "mullet", "catshark", "hen", "rooster", "sheep", "goat", "huntingKit", "firewood", "snake_raw", "snakemeat" };
     };
 
     class med_market {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator", "vehiclecutter", "broadcastmic" };
     };
 
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "handcuffs", "keys", "electricfishing" };
     };
 
     class gang {
@@ -46,7 +46,7 @@ class VirtualShops {
 
     class coffee {
         name = "STR_Shops_Coffee";
-        side = "civ";
+        side = "";
         conditions = "";
         items[] = { "coffee", "donuts" };
     };
@@ -74,9 +74,9 @@ class VirtualShops {
 
     class fishmarket {
         name = "STR_Shops_FishMarket";
-        side = "civ";
+        side = "";
         conditions = "";
-        items[] = { "salema_raw", "salema", "ornate_raw", "ornate", "mackerel_raw", "mackerel", "tuna_raw", "tuna", "mullet_raw", "mullet", "catshark_raw", "catshark" };
+        items[] = { "salema_raw", "salema", "ornate_raw", "ornate", "mackerel_raw", "mackerel", "tuna_raw", "tuna", "mullet_raw", "mullet", "catshark_raw", "catshark", "stringfishing" };
     };
 
     class glass {
@@ -125,7 +125,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator", "handcuffs", "keys", "vehiclecutter"};
     };
 };
 
@@ -149,8 +149,8 @@ class VirtualItems {
         variable = "pickaxe";
         displayName = "STR_Item_Pickaxe";
         weight = 2;
-        buyPrice = 750;
-        sellPrice = 350;
+        buyPrice = 3000;
+        sellPrice = 2000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_pickaxe.paa";
@@ -160,8 +160,8 @@ class VirtualItems {
         variable = "defibrillator";
         displayName = "STR_Item_Defibrillator";
         weight = 4;
-        buyPrice = 900;
-        sellPrice = 450;
+        buyPrice = 5000;
+        sellPrice = 3000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_defibrillator.paa";
@@ -171,8 +171,8 @@ class VirtualItems {
         variable = "toolkit";
         displayName = "STR_Item_Toolkit";
         weight = 4;
-        buyPrice = 350;
-        sellPrice = 100;
+        buyPrice = 2000;
+        sellPrice = 1000;
         illegal = false;
         edible = -1;
         icon = "\a3\weapons_f\items\data\UI\gear_toolkit_ca.paa";
@@ -183,7 +183,7 @@ class VirtualItems {
         displayName = "STR_Item_FuelE";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 10;
+        sellPrice = 500;
         illegal = false;
         edible = -1;
         icon = "icons\ico_fuelEmpty.paa";
@@ -193,8 +193,8 @@ class VirtualItems {
         variable = "fuelFull";
         displayName = "STR_Item_FuelF";
         weight = 5;
-        buyPrice = 850;
-        sellPrice = 500;
+        buyPrice = 2500;
+        sellPrice = 1500;
         illegal = false;
         edible = -1;
         icon = "icons\ico_fuel.paa";
@@ -204,9 +204,9 @@ class VirtualItems {
         variable = "spikeStrip";
         displayName = "STR_Item_SpikeStrip";
         weight = 15;
-        buyPrice = 2500;
-        sellPrice = 1200;
-        illegal = true;
+        buyPrice = 10000;
+        sellPrice = 5000;
+        illegal = false;
         edible = -1;
         icon = "icons\ico_spikeStrip.paa";
     };
@@ -215,8 +215,8 @@ class VirtualItems {
         variable = "lockpick";
         displayName = "STR_Item_Lockpick";
         weight = 1;
-        buyPrice = 150;
-        sellPrice = 75;
+        buyPrice = 3000;
+        sellPrice = 1500;
         illegal = true;
         edible = -1;
         icon = "icons\ico_lockpick.paa";
@@ -225,9 +225,9 @@ class VirtualItems {
     class goldbar {
         variable = "goldBar";
         displayName = "STR_Item_GoldBar";
-        weight = 12;
+        weight = 10;
         buyPrice = -1;
-        sellPrice = 95000;
+        sellPrice = 100000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_goldBar.paa";
@@ -237,8 +237,8 @@ class VirtualItems {
         variable = "blastingCharge";
         displayName = "STR_Item_BCharge";
         weight = 15;
-        buyPrice = 35000;
-        sellPrice = 10000;
+        buyPrice = 45000;
+        sellPrice = 20000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_blastingCharge.paa";
@@ -249,7 +249,7 @@ class VirtualItems {
         displayName = "STR_Item_BCutter";
         weight = 5;
         buyPrice = 7500;
-        sellPrice = 1000;
+        sellPrice = 2000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_boltCutter.paa";
@@ -261,7 +261,7 @@ class VirtualItems {
         weight = 2;
         buyPrice = 2500;
         sellPrice = 2000;
-        illegal = true;
+        illegal = false;
         edible = -1;
         icon = "icons\ico_defuseKit.paa";
     };
@@ -270,8 +270,8 @@ class VirtualItems {
         variable = "storageSmall";
         displayName = "STR_Item_StorageBS";
         weight = 5;
-        buyPrice = 75000;
-        sellPrice = 50000;
+        buyPrice = 125000;
+        sellPrice = 70000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_storageSmall.paa";
@@ -281,8 +281,8 @@ class VirtualItems {
         variable = "storageBig";
         displayName = "STR_Item_StorageBL";
         weight = 10;
-        buyPrice = 150000;
-        sellPrice = 125000;
+        buyPrice = 200000;
+        sellPrice = 100000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_storageBig.paa";
@@ -305,7 +305,7 @@ class VirtualItems {
         displayName = "STR_Item_OilP";
         weight = 6;
         buyPrice = -1;
-        sellPrice = 3200;
+        sellPrice = 3500;
         illegal = false;
         edible = -1;
         icon = "icons\ico_oilProcessed.paa";
@@ -327,7 +327,7 @@ class VirtualItems {
         displayName = "STR_Item_CopperIngot";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 1500;
+        sellPrice = 2000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_copper.paa";
@@ -349,7 +349,7 @@ class VirtualItems {
         displayName = "STR_Item_IronIngot";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 3200;
+        sellPrice = 3400;
         illegal = false;
         edible = -1;
         icon = "icons\ico_iron.paa";
@@ -371,7 +371,7 @@ class VirtualItems {
         displayName = "STR_Item_SaltR";
         weight = 1;
         buyPrice = -1;
-        sellPrice = 1450;
+        sellPrice = 1600;
         illegal = false;
         edible = -1;
         icon = "icons\ico_saltProcessed.paa";
@@ -415,7 +415,7 @@ class VirtualItems {
         displayName = "STR_Item_DiamondC";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 2000;
+        sellPrice = 2500;
         illegal = false;
         edible = -1;
         icon = "icons\ico_diamondCut.paa";
@@ -437,7 +437,7 @@ class VirtualItems {
         displayName = "STR_Item_CementBag";
         weight = 5;
         buyPrice = -1;
-        sellPrice = 1950;
+        sellPrice = 2300;
         illegal = false;
         edible = -1;
         icon = "icons\ico_cement.paa";
@@ -460,8 +460,8 @@ class VirtualItems {
         variable = "heroinProcessed";
         displayName = "STR_Item_HeroinP";
         weight = 4;
-        buyPrice = 3500;
-        sellPrice = 2560;
+        buyPrice = 5000;
+        sellPrice = 4000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_heroinProcessed.paa";
@@ -483,8 +483,8 @@ class VirtualItems {
         variable = "marijuana";
         displayName = "STR_Item_Marijuana";
         weight = 3;
-        buyPrice = 2800;
-        sellPrice = 2350;
+        buyPrice = 4150;
+        sellPrice = 3350;
         illegal = true;
         edible = -1;
         icon = "icons\ico_marijuana.paa";
@@ -507,7 +507,7 @@ class VirtualItems {
         displayName = "STR_Item_CocaineP";
         weight = 4;
         buyPrice = -1;
-        sellPrice = 5000;
+        sellPrice = 5600;
         illegal = true;
         edible = -1;
         icon = "icons\ico_cocaineProcessed.paa";
@@ -518,8 +518,8 @@ class VirtualItems {
         variable = "redgull";
         displayName = "STR_Item_RedGull";
         weight = 1;
-        buyPrice = 1500;
-        sellPrice = 200;
+        buyPrice = 2000;
+        sellPrice = 500;
         illegal = false;
         edible = 100;
         icon = "icons\ico_redgull.paa";
@@ -529,8 +529,8 @@ class VirtualItems {
         variable = "coffee";
         displayName = "STR_Item_Coffee";
         weight = 1;
-        buyPrice = 10;
-        sellPrice = 5;
+        buyPrice = 200;
+        sellPrice = 100;
         illegal = false;
         edible = 100;
         icon = "icons\ico_coffee.paa";
@@ -540,8 +540,8 @@ class VirtualItems {
         variable = "waterBottle";
         displayName = "STR_Item_WaterBottle";
         weight = 1;
-        buyPrice = 10;
-        sellPrice = 5;
+        buyPrice = 100;
+        sellPrice = 50;
         illegal = false;
         edible = 100;
         icon = "icons\ico_waterBottle.paa";
@@ -552,8 +552,8 @@ class VirtualItems {
         variable = "apple";
         displayName = "STR_Item_Apple";
         weight = 1;
-        buyPrice = 65;
-        sellPrice = 50;
+        buyPrice = 800;
+        sellPrice = 350;
         illegal = false;
         edible = 10;
         icon = "icons\ico_apple.paa";
@@ -563,8 +563,8 @@ class VirtualItems {
         variable = "peach";
         displayName = "STR_Item_Peach";
         weight = 1;
-        buyPrice = 68;
-        sellPrice = 55;
+        buyPrice = 780;
+        sellPrice = 330;
         illegal = false;
         edible = 10;
         icon = "icons\ico_peach.paa";
@@ -574,8 +574,8 @@ class VirtualItems {
         variable = "tbacon";
         displayName = "STR_Item_TBacon";
         weight = 1;
-        buyPrice = 75;
-        sellPrice = 25;
+        buyPrice = 500;
+        sellPrice = 250;
         illegal = false;
         edible = 40;
         icon = "icons\ico_tBacon.paa";
@@ -585,8 +585,8 @@ class VirtualItems {
         variable = "donuts";
         displayName = "STR_Item_Donuts";
         weight = 1;
-        buyPrice = 120;
-        sellPrice = 60;
+        buyPrice = 400;
+        sellPrice = 160;
         illegal = false;
         edible = 30;
         icon = "icons\ico_donuts.paa";
@@ -597,9 +597,10 @@ class VirtualItems {
         displayName = "STR_Item_RabbitRaw";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 95;
+        sellPrice = 300;
         illegal = false;
         edible = -1;
+        cooked = "rabbit";	//AOSoul
         icon = "icons\ico_rabbitRaw.paa";
     };
 
@@ -607,8 +608,8 @@ class VirtualItems {
         variable = "rabbit";
         displayName = "STR_Item_Rabbit";
         weight = 1;
-        buyPrice = 150;
-        sellPrice = 115;
+        buyPrice = -1;
+        sellPrice = 750;
         illegal = false;
         edible = 20;
         icon = "icons\ico_rabbit.paa";
@@ -619,9 +620,10 @@ class VirtualItems {
         displayName = "STR_Item_SalemaRaw";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 45;
+        sellPrice = 350;
         illegal = false;
         edible = -1;
+        cooked = "salema";	//AOSoul
         icon = "icons\ico_salemaRaw.paa";
     };
 
@@ -629,8 +631,8 @@ class VirtualItems {
         variable = "salema";
         displayName = "STR_Item_Salema";
         weight = 1;
-        buyPrice = 75;
-        sellPrice = 55;
+        buyPrice = -1;
+        sellPrice = 1000;
         illegal = false;
         edible = 30;
         icon = "icons\ico_cookedFish.paa";
@@ -641,9 +643,10 @@ class VirtualItems {
         displayName = "STR_Item_OrnateRaw";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 40;
+        sellPrice = 900;
         illegal = false;
         edible = -1;
+        cooked = "ornate";	//AOSoul
         icon = "icons\ico_ornateRaw.paa";
     };
 
@@ -651,8 +654,8 @@ class VirtualItems {
         variable = "ornate";
         displayName = "STR_Item_Ornate";
         weight = 1;
-        buyPrice = 175;
-        sellPrice = 150;
+        buyPrice = -1;
+        sellPrice = 1100;
         illegal = false;
         edible = 25;
         icon = "icons\ico_cookedFish.paa";
@@ -663,9 +666,10 @@ class VirtualItems {
         displayName = "STR_Item_MackerelRaw";
         weight = 4;
         buyPrice = -1;
-        sellPrice = 175;
+        sellPrice = 1150;
         illegal = false;
         edible = -1;
+        cooked = "mackerel";	//AOSoul
         icon = "icons\ico_mackerelRaw.paa";
     };
 
@@ -673,8 +677,8 @@ class VirtualItems {
         variable = "mackerel";
         displayName = "STR_Item_Mackerel";
         weight = 2;
-        buyPrice = 250;
-        sellPrice = 200;
+        buyPrice = -1;
+        sellPrice = 1650;
         illegal = false;
         edible = 30;
         icon = "icons\ico_cookedFish.paa";
@@ -685,9 +689,10 @@ class VirtualItems {
         displayName = "STR_Item_TunaRaw";
         weight = 6;
         buyPrice = -1;
-        sellPrice = 700;
+        sellPrice = 4000;
         illegal = false;
         edible = -1;
+        cooked = "tuna";	//AOSoul
         icon = "icons\ico_tunaRaw.paa";
     };
 
@@ -695,8 +700,8 @@ class VirtualItems {
         variable = "tuna";
         displayName = "STR_Item_Tuna";
         weight = 3;
-        buyPrice = 1250;
-        sellPrice = 1000;
+        buyPrice = -1;
+        sellPrice = 5300;
         illegal = false;
         edible = 100;
         icon = "icons\ico_cookedFish.paa";
@@ -707,9 +712,10 @@ class VirtualItems {
         displayName = "STR_Item_MulletRaw";
         weight = 4;
         buyPrice = -1;
-        sellPrice = 250;
+        sellPrice = 2500;
         illegal = false;
         edible = -1;
+        cooked = "mullet";	//AOSoul
         icon = "icons\ico_mulletRaw.paa";
     };
 
@@ -717,8 +723,8 @@ class VirtualItems {
         variable = "mullet";
         displayName = "STR_Item_Mullet";
         weight = 2;
-        buyPrice = 600;
-        sellPrice = 400;
+        buyPrice = -1;
+        sellPrice = 3400;
         illegal = false;
         edible = 80;
         icon = "icons\ico_cookedFish.paa";
@@ -729,9 +735,10 @@ class VirtualItems {
         displayName = "STR_Item_CatSharkRaw";
         weight = 6;
         buyPrice = -1;
-        sellPrice = 300;
+        sellPrice = 7500;
         illegal = false;
         edible = -1;
+        cooked = "catshark";	//AOSoul
         icon = "icons\ico_catsharkRaw.paa";
     };
 
@@ -739,8 +746,8 @@ class VirtualItems {
         variable = "catshark";
         displayName = "STR_Item_CatShark";
         weight = 3;
-        buyPrice = 750;
-        sellPrice = 500;
+        buyPrice = -1;
+        sellPrice = 8300;
         illegal = false;
         edible = 100;
         icon = "icons\ico_cookedFish.paa";
@@ -751,9 +758,10 @@ class VirtualItems {
         displayName = "STR_Item_TurtleRaw";
         weight = 6;
         buyPrice = -1;
-        sellPrice = 3000;
+        sellPrice = 9000;
         illegal = true;
         edible = -1;
+        cooked = "turtle_soup";	//AOSoul
         icon = "icons\ico_turtleRaw.paa";
     };
 
@@ -761,8 +769,8 @@ class VirtualItems {
         variable = "turtleSoup";
         displayName = "STR_Item_TurtleSoup";
         weight = 2;
-        buyPrice = 1000;
-        sellPrice = 750;
+        buyPrice = -1;
+        sellPrice = 10000;
         illegal = false;
         edible = 100;
         icon = "icons\ico_turtleSoup.paa";
@@ -773,9 +781,10 @@ class VirtualItems {
         displayName = "STR_Item_HenRaw";
         weight = 1;
         buyPrice = -1;
-        sellPrice = 65;
+        sellPrice = 3300;
         illegal = false;
         edible = -1;
+        cooked = "hen";	//AOSoul
         icon = "icons\ico_wholeChickenRaw.paa";
     };
 
@@ -783,8 +792,8 @@ class VirtualItems {
         variable = "hen";
         displayName = "STR_Item_Hen";
         weight = 1;
-        buyPrice = 115;
-        sellPrice = 85;
+        buyPrice = -1;
+        sellPrice = 3800;
         illegal = false;
         edible = 65;
         icon = "icons\ico_wholeChicken.paa";
@@ -795,18 +804,19 @@ class VirtualItems {
         displayName = "STR_Item_RoosterRaw";
         weight = 1;
         buyPrice = -1;
-        sellPrice = 65;
+        sellPrice = 6000;
         illegal = false;
         edible = -1;
+        cooked = "rooster";	//AOSoul
         icon = "icons\ico_chickenDrumstickRaw.paa";
     };
 
     class rooster {
         variable = "rooster";
         displayName = "STR_Item_Rooster";
-        weight = 115;
-        buyPrice = 90;
-        sellPrice = 85;
+        weight = 1;
+        buyPrice = -1;
+        sellPrice = 6800;
         illegal = false;
         edible = 45;
         icon = "icons\ico_chickenDrumstick.paa";
@@ -817,9 +827,10 @@ class VirtualItems {
         displayName = "STR_Item_SheepRaw";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 95;
+        sellPrice = 12000;
         illegal = false;
         edible = -1;
+        cooked = "sheep";	//AOSoul
         icon = "icons\ico_lambChopRaw.paa";
     };
 
@@ -827,8 +838,8 @@ class VirtualItems {
         variable = "sheep";
         displayName = "STR_Item_Sheep";
         weight = 2;
-        buyPrice = 155;
-        sellPrice = 115;
+        buyPrice = -1;
+        sellPrice = 13300;
         illegal = false;
         edible = 100;
         icon = "icons\ico_lambChop.paa";
@@ -839,9 +850,10 @@ class VirtualItems {
         displayName = "STR_Item_GoatRaw";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 115;
+        sellPrice = 13000;
         illegal = false;
         edible = -1;
+        cooked = "goat";	//AOSoul
         icon = "icons\ico_muttonLegRaw.paa";
     };
 
@@ -849,10 +861,122 @@ class VirtualItems {
         variable = "goat";
         displayName = "STR_Item_Goat";
         weight = 2;
-        buyPrice = 175;
-        sellPrice = 135;
+        buyPrice = -1;
+        sellPrice = 14000;
         illegal = false;
         edible = 100;
         icon = "icons\ico_muttonLeg.paa";
     };
+    
+    class snake_raw {
+        variable = "snakeRaw";
+        displayName = "STR_AOSOUL_Animal_Snake_Raw";
+        weight = 5;
+        buyPrice = -1;
+        sellPrice = 2000;
+        illegal = false;
+        edible = -1;
+        cooked = "snakemeat";    //AOSoul
+        icon = "icons\AOSoul\ico_snakeraw.paa";
+    };
+
+    class snakemeat {
+        variable = "snakemeat";
+        displayName = "STR_AOSOUL_Animal_Snake_Meat";
+        weight = 5;
+        buyPrice = -1;
+        sellPrice = 4000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_rabbit.paa";
+    };
+
+    // custom 
+    class handcuffs {
+        variable = "handcuffs";
+        displayName = "STR_AOSOUL_Items_Handcuffs";
+        weight = 1;
+        buyPrice = 3000;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\AOSoul\cuffs.paa";
+    };	
+	
+    class keys {
+        variable = "keys";
+        displayName = "STR_AOSOUL_Items_keys";
+        weight = 1;
+        buyPrice = 1500;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\AOSoul\icon_keys.paa";
+    };
+	
+    class huntingKit {
+        variable = "huntingKit";
+        displayName = "STR_AOSOUL_Items_huntingkit";
+        weight = 2;
+        buyPrice = 8000;
+        sellPrice = 3000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\AOSoul\ico_huntingKit.paa";
+    };
+	
+    class firewood {
+        variable = "firewood";
+        displayName = "STR_AOSOUL_Items_Firewood";
+        weight = 5;
+        buyPrice = 50000;
+        sellPrice = 25000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\AOSoul\ico_FireWood.paa";
+    };
+
+    class stringfishing {
+        variable = "stringfishing";
+        displayName = "STR_AOSOUL_Items_StringFishing";
+        weight = 5;
+        buyPrice = 30000;
+        sellPrice = 10000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\AOSoul\ico_stringfishing.paa";
+    };
+
+    class electricfishing {
+        variable = "electricfishing";
+        displayName = "STR_AOSOUL_Items_electricfishing";
+        weight = 5;
+        buyPrice = 500000;
+        sellPrice = 250000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\AOSoul\ico_electricfishing.paa";
+    };
+
+    class vehiclecutter {
+        variable = "vehiclecutter";
+        displayName = "STR_AOSOUL_Items_vehiclecutter";
+        weight = 5;
+        buyPrice = 30000;
+        sellPrice = 15000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\AOSoul\ico_VehicleCutter.paa";
+    };
+
+    class broadcastmic {
+		variable = "broadcastmic";
+		displayName = "STR_Item_broadcastmic";
+		weight = 5;
+		buyPrice = 990000;
+		sellPrice = -1;
+		illegal = false;
+		edible = -1;
+		icon = "icons\AOSoul\ico_mic.paa";
+	};
 };

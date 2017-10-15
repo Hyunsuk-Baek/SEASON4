@@ -86,6 +86,7 @@ if (LIFE_SETTINGS(getNumber,"save_civilian_position_restart") isEqualTo 1) then 
 };
 
 /* Map-based server side initialization. */
+/*
 master_group attachTo[bank_obj,[0,0,0]];
 
 {
@@ -113,7 +114,8 @@ master_group attachTo[bank_obj,[0,0,0]];
             hospital_assis_2 setPos (_hs modelToWorld [0.0175781,0.0234375,-0.231956]);
         };
     };
-} forEach ["hospital_2","hospital_3"];
+} forEach ["hospital_2","hospital_3","hospital_4"];
+*/
 
 {
     if (!isPlayer _x) then {
@@ -134,9 +136,12 @@ life_copLevel = 0;
 CONST(JxMxE_PublishVehicle,"false");
 
 /* Setup radio channels for west/independent/civilian */
+life_radio_custom = radioChannelCreate [[255, 0, 0, 0.8], "긴급 채널", "%UNIT_NAME", []];
+/*
 life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
+*/
 
 /* Set the amount of gold in the federal reserve at mission start */
 fed_bank setVariable ["safe",count playableUnits,true];
@@ -167,7 +172,7 @@ cleanupFSM = [] execFSM "\life_server\FSM\cleanup.fsm";
         uiSleep (30 * 60);
         {
             _x setVariable ["sellers",[],true];
-        } forEach [Dealer_1,Dealer_2,Dealer_3];
+        } forEach [Dealer_1];
     };
 };
 
@@ -183,10 +188,11 @@ publicVariable "TON_fnc_playtime_values_request";
 
 
 /* Setup the federal reserve building(s) */
-private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
+private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"], ["LosSantos", "Land_Research_house_V1_F"]]] call TON_fnc_terrainSort;
 private _altisArray = [16019.5,16952.9,0];
 private _tanoaArray = [11074.2,11501.5,0.00137329];
-private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
+private _lossantosArray = [8482.72,3468.58,32.393];
+private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray], ["LosSantos", _lossantosArray]]] call TON_fnc_terrainSort;
 
 _dome = nearestObject [_pos,"Land_Dome_Big_F"];
 _rsb = nearestObject [_pos,_vaultHouse];
@@ -203,7 +209,7 @@ life_server_isReady = true;
 publicVariable "life_server_isReady";
 
 /* Initialize hunting zone(s) */
-aiSpawn = ["hunting_zone",30] spawn TON_fnc_huntingZone;
+aiSpawn = ["hunting_zone",60] spawn TON_fnc_huntingZone;
 
 // We create the attachment point to be used for objects to attachTo load virtually in vehicles.
 life_attachment_point = "Land_HelipadEmpty_F" createVehicle [0,0,0];
@@ -212,6 +218,28 @@ life_attachment_point setVectorDirAndUp [[0,1,0], [0,0,1]];
 
 // Sharing the point of attachment with all players.
 publicVariable "life_attachment_point";
+
+//MarketSystem
+[] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
+
+_markername1="deleteArea1";
+_terrainobjects1=nearestTerrainObjects [(getMarkerPos _markername1),[],(getmarkersize _markername1)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects1; 
+_markername2="deleteArea1";
+_terrainobjects2=nearestTerrainObjects [(getMarkerPos _markername2),[],(getmarkersize _markername2)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects2; 
+_markername3="deleteArea1";
+_terrainobjects3=nearestTerrainObjects [(getMarkerPos _markername3),[],(getmarkersize _markername3)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects3; 
+_markername4="deleteArea1";
+_terrainobjects4=nearestTerrainObjects [(getMarkerPos _markername4),[],(getmarkersize _markername4)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects4; 
+_markername5="deleteArea1";
+_terrainobjects5=nearestTerrainObjects [(getMarkerPos _markername5),[],(getmarkersize _markername5)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects5; 
+_markername6="deleteArea1";
+_terrainobjects6=nearestTerrainObjects [(getMarkerPos _markername6),[],(getmarkersize _markername6)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects6; 
 
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Server Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];

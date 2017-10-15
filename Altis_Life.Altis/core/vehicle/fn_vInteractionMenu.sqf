@@ -101,7 +101,7 @@ if (playerSide isEqualTo west) then {
         };
     } else {
         _Btn3 ctrlShow false;
-        if (typeOf (_curTarget) in ["C_Van_01_fuel_F","I_Truck_02_fuel_F","B_Truck_01_fuel_F"] && _curTarget in life_vehicles) then {
+        if (typeOf (_curTarget) in ["C_Van_01_fuel_F","I_Truck_02_fuel_F","B_Truck_01_fuel_F","O_Truck_03_fuel_F"] && _curTarget in life_vehicles) then {
             if (!isNil {_curTarget getVariable "fuelTankWork"}) then {
                 _Btn3 ctrlSetText localize "STR_FuelTank_Stop";
                 _Btn3 buttonSetAction "life_vInact_curTarget setVariable [""fuelTankWork"",nil,true]; closeDialog 0;";

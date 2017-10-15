@@ -27,10 +27,22 @@ class DeathScreen {
             h = (1 / 25);
         };
 
-        class RespawnBtn: Life_RscButtonMenu {
-            idc = 7302;
+        class DumpBtn: Life_RscButtonMenu {
+            idc = 7306;
             x = 0.9 * safezoneW + safezoneX;
             y = 0.015 * safezoneH + safezoneY;
+            w = (9 / 40);
+            h = (1 / 25);
+            text = "AOSOUL Life";
+            onButtonClick = "";
+            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
+            class Attributes {align = "center";};
+        };
+
+        class RespawnBtn: Life_RscButtonMenu {
+            idc = 7307;
+            x = 0.9 * safezoneW + safezoneX;
+            y = 0.040 * safezoneH + safezoneY;
             w = (9 / 40);
             h = (1 / 25);
             text = "Respawn";
@@ -40,9 +52,9 @@ class DeathScreen {
         };
 
         class MedicBtn: Life_RscButtonMenu {
-            idc = 7303;
+            idc = 7308;
             x = 0.9 * safezoneW + safezoneX;
-            y = 0.040 * safezoneH + safezoneY;
+            y = 0.065 * safezoneH + safezoneY;
             w = (9 / 40);
             h = (1 / 25);
             onButtonClick = "[] call life_fnc_requestMedic;";

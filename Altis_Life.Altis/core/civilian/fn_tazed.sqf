@@ -44,6 +44,10 @@ if (_shooter isKindOf "Man" && alive player) then {
         sleep 15;
 
         [player,"AmovPpneMstpSrasWrflDnon"] remoteExecCall ["life_fnc_animSync",RCLIENT];
+		
+		//AOSOUL 타격 후 효과
+		player setFatigue 1; // 피로도 소모로 도망 못가게 만들기
+        player setdamage 0.6;//달리지 못하게 다리 절게 만들기
 
         if (!(player getVariable ["Escorting",false])) then {
             detach player;

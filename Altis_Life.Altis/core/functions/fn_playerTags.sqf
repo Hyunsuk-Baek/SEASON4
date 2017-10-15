@@ -70,6 +70,13 @@ private _index = -1;
 
                 _idc ctrlSetStructuredText parseText _text;
                 _idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
+                //AOSoul added // 말할때 머리위 닉네임 표시 기능
+                if(_x getVariable ["speaking",false]) then {
+                    _text = "<t color='#12cc12'>[Speaking] " + _text
+                };
+                _idc ctrlSetStructuredText parseText _text;
+                _idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
+                ///////////////////////////////////////
                 _idc ctrlSetScale scale;
                 _idc ctrlSetFade 0;
                 _idc ctrlCommit 0;

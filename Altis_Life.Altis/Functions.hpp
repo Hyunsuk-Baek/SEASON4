@@ -71,6 +71,13 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+
+        //AOSoul Added :
+        class cook {};	//AOSoul Cooking
+        class processCasinoSlots {}; //Casino process
+        class JetRocket {}; //JetPack
+        class medicjet {};	//Medic Jetpack
+        //////////////////
     };
 
     class Admin {
@@ -218,6 +225,14 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+
+        //AOSoul Added:
+        class speaking {}; // 말할때 아이콘 표시 기능
+        class slotMachineRewards {};  //Casino
+        class slotMachineRandomizer {};  //Casino
+        class seatbelt {};  //안전벨트
+        class autoSetPolice {};//캅오토셋
+        ////////////////
     };
 
     class Gangs {
@@ -270,6 +285,9 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
+        class huntingKit {};	//AOSoul Hunting Kit
+        class campFire {};	//AOSoul Campfire
+        class weed {}; // AOSoul 약빠는 마리화나
     };
 
     class Medical_System {
@@ -352,6 +370,11 @@ class Life_Client_Core {
         class weaponShopMags {};
         class weaponShopMenu {};
         class weaponShopSelection {};
+        //AOSoul Added
+        class blackjack {};  //BlackJack
+        class BJbet {};  //BlackJack
+        class BJhit {};  //BlackJack
+        class BJstay {};  //BlackJack
     };
 
     class Vehicle {
@@ -371,5 +394,48 @@ class Life_Client_Core {
         class vehStoreItem {};
         class vehTakeItem {};
         class vInteractionMenu {};
+        class vehTakeAllItem {};    //Vehicle Trunk
+        class vehStoreAllItem {};   //Vehicle Trunk
+    };
+
+    //ADMIN Panel     //AOSoul added
+    class AdminMenu {
+        file = "AOSoul\AS_AdminMenu";
+        class openMenu {};
+        class ASreceiver {};
+        class execute {};
+        class ASrefund {};
+    };
+	
+    class AOSOULCustom {
+        file = "AOSoul\Functions";
+        class pee {};
+        class stringfishing {};
+        class ElectricFishing {};
+        class robstore {};
+        class outtro {};
+        class vehiclecutter {};
+        class CopCustomSirenM {};
+        class CopCustomSirenF {};
+    };
+
+    //Market System
+    class DynMarket {
+       file = "AOSoul\DynMarket";
+       class bought {};
+       class update {};
+       class DisplayPrices {};
+       class LoadIntoListbox {};
+       class ForcePrice {};
+       class DYNMARKET_getPrice {};
+    };
+
+    //Vehicle Indicators
+    class VehicleIndicators {
+        file = "AOSoul\VehicleIndicators";
+        class leftIndicatorLight {};
+        class rightIndicatorLight {};
+        class startIndicatorLeft {};
+        class startIndicatorRight {};
     };
 };

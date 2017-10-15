@@ -14,6 +14,26 @@ if (!hasInterface && !isServer) exitWith {
 #define LIFE_SETTINGS(TYPE,SETTING) TYPE(missionConfigFile >> "Life_Settings" >> SETTING)
 
 CONST(BIS_fnc_endMission,BIS_fnc_endMission);
-if (LIFE_SETTINGS(getNumber,"spyGlass_toggle") isEqualTo 1) then {[] execVM "SpyGlass\fn_initSpy.sqf";};
+//if (LIFE_SETTINGS(getNumber,"spyGlass_toggle") isEqualTo 1) then {[] execVM "SpyGlass\fn_initSpy.sqf";};
 
+//AOSoul Added
+//안전벨트
+if (hasInterface) then {
+    player addEventHandler ["GetOutMan", {
+        life_seatbelt = false;
+        [] call life_fnc_hudUpdate;
+    }];
+};
+
+if (hasInterface) then {
+    player addEventHandler ["GetInMan", {
+        life_seatbelt = false;
+        [] call life_fnc_hudUpdate;
+    }];
+};
+
+//패스트 로프
+#include "AOSoul\SHK_Fastrope.sqf";
+
+////////////////////////////////////////////////////
 [] execVM "core\init.sqf";

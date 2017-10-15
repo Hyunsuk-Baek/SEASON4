@@ -1,4 +1,6 @@
 #define ST_CENTER         0x02
+#define IDC_LIFE_BAR_SeatBelt 4203
+#define IDC_LIFE_PICTURE_WATERMARK 1e+1000
 /*
     Author: Daniel Stuart
 
@@ -21,7 +23,9 @@ class playerHUD {
         Life_RscProgress_HUDWater,
         Life_RscText_HUDFood,
         Life_RscText_HUDHealth,
-        Life_RscText_HUDWater
+        Life_RscText_HUDWater,
+        LIFE_BAR_SeatBelt,   //AOSoul Added Seatbelt Icon
+        LIFE_PICTURE_WATERMARK
     };
 
     /* Background */
@@ -84,5 +88,25 @@ class playerHUD {
         idc = 1202;
         text = "$STR_HUD_Water";
         x = 0.534723 * safezoneW + safezoneX;
+    };
+
+    //AOSoul Added Seatbelf
+    class LIFE_BAR_SeatBelt: Life_RscPicture
+    {
+        idc = IDC_LIFE_BAR_SeatBelt;
+        text = "";
+        x = 0.952292 * safezoneW + safezoneX;
+        y = 0.664333 * safezoneH + safezoneY;
+        w = 0.0331042 * safezoneW;
+        h = 0.0589743 * safezoneH;
+    };
+
+    class LIFE_PICTURE_WATERMARK: Life_RscPicture {
+        idc = 9999;
+        text = "icons\AOSoul\BG.paa";
+        x = 0.87 * safezoneW + safezoneX;
+        y = 0.83 * safezoneH + safezoneY;
+        w = 0.12 * safezoneW;
+        h = 0.128 * safezoneH;
     };
 };

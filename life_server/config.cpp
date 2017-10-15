@@ -5,7 +5,7 @@ class CfgPatches {
         weapons[] = {};
         requiredAddons[] = {"A3_Data_F","A3_Soft_F","A3_Soft_F_Offroad_01","A3_Characters_F"};
         fileName = "life_server.pbo";
-        author = "Tonic";
+        author = "AOSoul";
     };
 };
 
@@ -77,6 +77,7 @@ class CfgFunctions {
             class recupkeyforHC {};
             class handleBlastingCharge {};
             class terrainSort {};
+			class timers {};//Cooking Timer
         };
 
         class Housing {
@@ -111,6 +112,23 @@ class CfgFunctions {
             file = "\life_server\Functions\PlayTime";
             class setPlayTime {};
             class getPlayTime {};
+        };
+
+        class AS {
+            file = "\life_server\AS_AdminMenu";
+                class receiver {};
+                class config {};
+                class getActions {};
+        };
+
+        class DynMarket {
+            file = "\life_server\Functions\DynMarket";
+                class calculatePrices {};
+                class config {};
+                class getUpdate {};
+                class HandleDB {};
+                class playerLogged {};
+                class sleeper {};
         };
     };
 };

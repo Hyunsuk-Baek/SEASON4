@@ -71,6 +71,7 @@ class CfgRemoteExec {
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
+        F(bis_fnc_debugconsoleexec,SERVER) //Debug Console Useable
         F(DB_fnc_insertRequest,SERVER)
         F(DB_fnc_queryRequest,SERVER)
         F(DB_fnc_updatePartial,SERVER)
@@ -144,6 +145,8 @@ class CfgRemoteExec {
         F(HC_fnc_wantedFetch,HC)
         F(HC_fnc_wantedProfUpdate,HC)
         F(HC_fnc_wantedRemove,HC)
+        F(TON_fnc_getActions,SERVER)
+        F(life_fnc_ASreceiver,SERVER)
 
         /* Functions for everyone */
         F(BIS_fnc_effectKilledAirDestruction,ANYONE)
@@ -161,6 +164,50 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
+
+        /* bis_fnc */
+        //AOSoul Added
+        F(TON_fnc_timers,SERVER) //AOSoul Cooking Timer
+        F(bis_fnc_setdate,ANYONE)
+        F(bis_fnc_setppeffecttemplate,ANYONE)
+        F(bis_fnc_setidentity,ANYONE)
+        F(bis_fnc_curatorrespawn,ANYONE)
+        F(bis_fnc_setfog,ANYONE)
+        F(bis_fnc_setovercast,ANYONE)
+        F(bis_fnc_bloodeffect,ANYONE)
+        F(bis_fnc_saymessage,ANYONE)
+        F(bis_fnc_initleaflet,ANYONE)
+        F(life_fnc_stringfishing,CLIENT)    //AOSoul StringFishing
+        F(life_fnc_Electricfishing,CLIENT)    //AOSoul ElectricFishing
+        F(life_fnc_robstore,CLIENT)    //AOSoul RobGasStation
+
+        F(TON_fnc_playerLogged,SERVER) //DynMarket
+        F(TON_fnc_getUpdate,SERVER) //DynMarket
+        F(TON_fnc_changePrice, SERVER) //DynMarket
+        F(life_fnc_update,CLIENT) //DynMarket
+
+        F(sa_hide_object_global,CLIENT) //Tow Hide object function
+
+        F(life_fnc_leftIndicatorLight,ANYONE)   //Vehicle Indicators
+        F(life_fnc_rightIndicatorLight,ANYONE)  //Vehicle Indicators
+
+        F(life_fnc_CopCustomSirenM,CLIENT) //Cop Custom Siren Male
+        F(life_fnc_CopCustomSirenF,CLIENT) //Cop Custom Siren Female
+		
+		F(life_client_fnc_broadcast,CLIENT)	//Broadcast
+		F(life_client_fnc_animsync,CLIENT)	//Animsync
+		
+		F(BIS_fnc_sunriseSunsetTime,CLIENT)	//SunsetTime
+		F(BIS_fnc_setPitchBank,CLIENT)	//setPitchBank
+		
+		F(mocap_fnc_strokeeffects,CLIENT)	//Mocap Hit effect
+		
+		F(aur_hide_object_global,ANYONE)	//Rapel Hide
+		F(AUR_Play_Rappelling_Sounds_Global,ANYONE)	//Rapel Sound
+		F(AUR_Enable_Rappelling_Animation_Global,ANYONE)	//Rapel Anim
+		
+		F(SHARK_fnc_dayOrNight,ANYONE)	//Shark attack time fnc
+		F(SHARK_fnc_heightCorrection,ANYONE)	//Shark behavior
     };
 
     class Commands {
@@ -172,5 +219,7 @@ class CfgRemoteExec {
         F(addPrimaryWeaponItem,ANYONE)
         F(addWeapon,ANYONE)
         F(setFuel,ANYONE)
+        F(enableSimulationGlobal,ANYONE)
+        F(call,ANYONE)
     };
 };

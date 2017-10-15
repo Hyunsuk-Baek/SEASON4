@@ -19,7 +19,7 @@ diag_log "--------------------------------- Starting Altis Life Client Init ----
 diag_log "------------------------------------------ Version 5.0.0 -------------------------------------------";
 diag_log "----------------------------------------------------------------------------------------------------";
 waitUntil {!isNull player && player == player}; //Wait till the player is ready
-[] call compile preprocessFileLineNumbers "core\clientValidator.sqf";
+//[] call compile preprocessFileLineNumbers "core\clientValidator.sqf";
 enableSentences false;
 
 //Setup initial client core functions
@@ -97,6 +97,7 @@ player setVariable ["playerSurrender",false,true];
 
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";
+[] spawn life_fnc_speaking; // 말할때 태그 표시
 
 diag_log "Executing client.fsm";
 waitUntil {!(isNull (findDisplay 46))};
@@ -170,6 +171,19 @@ life_hideoutBuildings = [];
     false
 } count ["gang_area_1","gang_area_2","gang_area_3"];
 
+DYNAMICMARKET_boughtItems = [];
+[player] remoteExec ["TON_fnc_playerLogged",RSERV];
+
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "----------------------------------------------------------------------------------------------------";
+
+//AOSoul Added
+//Ragdoll Effect Setup
+player addEventHandler ["AnimStateChanged", {
+    if (_this select 1 == "incapacitated") then {
+        player allowDamage false;
+        player setPosWorld getPosWorld player;
+        player allowDamage true;
+    };
+}]; 

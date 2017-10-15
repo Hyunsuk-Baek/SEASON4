@@ -55,7 +55,7 @@ for "_i" from 0 to 1 step 0 do {
 
     uiSleep (3 * 60); //3 minute cool-down before next cycle.
     {
-        if ((typeOf _x) in ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F", "Land_Can_V3_F","Land_Money_F","Land_Suitcase_F"]) then {
+        if ((typeOf _x) in ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F", "Land_Can_V3_F","Land_Money_F","Land_Suitcase_F","Land_Can_V2_F"]) then {
             deleteVehicle _x;
         };
     } forEach (allMissionObjects "Thing");

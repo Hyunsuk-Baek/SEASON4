@@ -25,39 +25,38 @@ TEXT HERE<br/><br/>
 
     player createDiaryRecord ["credits",
         [
-            "AsYetUntitled",
+            "AOSoul",
                 "
-AsYetUntitled (formerly ArmaLife) is a GitHub project which aims to update and keep adding new features to the original 'Altis Life RPG' by Tonic.<br/><br/>
+			PVP, 저격질, 장비질 보단 상황에 따른 역할극(RPG)을 플레이하는 LIFE서버입니다. (pvp 아닙니다!!)<br/>
+			누군가를 사살하거나 강도짓을 할 때, 그에 따른 상황을 만들어야지만 제재받지 아니합니다.<br/>
+			제 2의 라이프를 본 서버에서 느끼며 재미와 힐링하는 시간 가지길 바랍니다. <br/>
+			유머게시판에  재밌는 RP플레이 영상있으니 참고하세요<br/>
+     카페주소: http://cafa.naver.com/alflrss <br/>
+     디스코드: https://discord.gg/tVyFjzm <br/>
                 "
         ]
     ];
 
     player createDiaryRecord ["changelog",
         [
-            "Altis Life Changelog",
+            "AOSoul Life Changelog",
                 "
-The full changelog can be found on the AsYetUntitled/Framework repository on GitHub. https://github.com/AsYetUntitled/Framework/<br/><br/>
-v4.4 release 3!<br/>
-By: danielstuart14<br/>
-Date: 31. May 2016<br/><br/>
-v4.4 release 2!<br/>
-By: danielstuart14<br/>
-Date: 20. March 2016<br/><br/>
-v4.4 release 1!<br/>
-By: danielstuart14<br/>
-Date: 12. February 2016<br/><br/>
-v4.3 release 4!<br/>
-By: danielstuart14<br/>
-Date: 31. January 2016<br/><br/>
-v4.3 release 3!<br/>
-By: danielstuart14<br/>
-Date: Not released<br/><br/>
-v4.3 release 2!<br/>
-By: danielstuart14<br/>
-Date: 22. January 2016<br/><br/>
-v4.3 release 1!<br/>
-By: danielstuart14<br/>
-Date: 19. January 2016<br/><br/>
+		2016.2 Soul(Fucker) Life 오픈<br/>
+		2016.3 국내 최대 IDC로 서버 영구임대 호스팅 <br/>
+		2016.4 최고 동시접속인원 70명 돌파<br/>
+		2016.4 휴식기에 있던 AOS 님을 초빙, The AOSoul 로 AOS와 Soul 카페/서버 통합<br/>
+		2016.5 최고 동접 80명 돌파 <br/>
+		2016.6 서버 업그레이드<br/>
+		2016.6 테스크포스 애로우헤드 라디오(TFAR) 애드온 도입 <br/>
+		2016.7 자동차, 무기, 복장등 애드온 적용 및 후원자 시스템 도입<br/>
+		2016.7 특별 사면 <br/>
+		2016.7 서버접속 GUID 5000명 돌파<br/>
+		2016.10 판사투표 및 임명<br/>
+		2016.10 전 세계 아르마서버 순위 200위권 진입<br/>
+		2016.11 1시즌 종료, 2시즌 시작<br/>
+		2016.12 서버접속 GUID 6000명 돌파<br/>
+		2016.12 Altis 맵에서 Metropolis 맵으로 변경, 컨텐츠 추가<br/>
+		2017.5 3시즌 시작<br/>
                 "
         ]
     ];

@@ -31,6 +31,7 @@ if ((_weight select 1) >= (_weight select 0)) exitWith {
 //check if we are in the resource zone for any of the resources
 _zone = "";
 
+/*
 _resourceCfg = missionConfigFile >> "CfgGather" >> "Resources";
 for "_i" from 0 to count(_resourceCfg)-1 do {
     _curConfig = (_resourceCfg select _i);
@@ -46,6 +47,7 @@ for "_i" from 0 to count(_resourceCfg)-1 do {
 
     if (_zone != "") exitWith {_isMineral = false;};
 };
+*/
 
 _resourceCfg = missionConfigFile >> "CfgGather" >> "Minerals";
 for "_i" from 0 to count(_resourceCfg)-1 do {

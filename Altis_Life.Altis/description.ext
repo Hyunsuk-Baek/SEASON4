@@ -1,10 +1,43 @@
-disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
-overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
+//AOSoul added
+//0 = Default behavior, available only in editor
+//1 = Available in SP and for hosts / logged in admins
+//2 = Available for everyone
+
+//Channel Number
+//0 = Global
+//1 = Side
+//2 = Command
+//3 = Group
+//4 = Vehicle
+//5 = Direct
+//6 = System
+
+disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};
+// Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
+overviewText = "$STR_MISC_overviewText";    
+// Text to bePicture on the mission selection screen when the mission is available to play.
+//AOSoul added
+//HUD Setting
+showHUD[] = {
+    true,  // Scripted HUD (same as showHUD command)
+    true,  // Vehicle + soldier info
+    true,  // Vehicle radar [HIDDEN]
+    true,  // Vehicle compass [HIDDEN]
+    true,  // Tank direction indicator
+    true,  // Commanding menu
+    true,  // Group Bar
+    true,  // HUD Weapon Cursors
+    true
+};
+
+//AOSoul added
+enableDebugConsole = 1;
 
 #include "config\Config_SpyGlass.hpp"
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
+#include "AOSoul\AS_AdminMenu\spectating.hpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -20,6 +53,10 @@ class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
+	
+	//AOSoul added
+    #include "dialog\statusBar.hpp"
+    #include "dialog\slotmachine.hpp"	//슬롯머신
 };
 
 class CfgFunctions {
@@ -28,27 +65,27 @@ class CfgFunctions {
 
 class CfgSounds {
     sounds[] = {};
-    class sirenLong {
-        name = "sirenLong";
-        sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};
+    class sirenYelp {
+        name = "sirenYelp";
+        sound[] = {"\sounds\sirenYelp.ogg", 3.5, 1};
         titles[] = {};
     };
 
     class medicSiren {
         name = "medicSiren";
-        sound[] = {"\sounds\medicSiren.ogg", 1.0, 1};
+        sound[] = {"\sounds\medicSiren.ogg", 3.5, 1};
         titles[] = {};
     };
 
     class tazerSound {
         name = "tazerSound";
-        sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+        sound[] = {"\sounds\tazer.ogg", 0.5, 1};
         titles[] = {};
     };
 
     class flashbang {
         name = "flashbang";
-        sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+        sound[] = {"\sounds\flashbang.ogg", 1.5, 1};
         titles[] = {};
     };
 
@@ -66,13 +103,160 @@ class CfgSounds {
 
     class lockCarSound {
         name = "lockCarSound";
-        sound[] = {"\sounds\carLock.ogg", 0.25, 1};
+        sound[] = {"\sounds\carLock.ogg", 0.4, 1};
         titles[] = {};
     };
 
     class unlockCarSound {
         name = "unlockCarSound";
-        sound[] = {"\sounds\carUnlock.ogg", 0.25, 1};
+        sound[] = {"\sounds\carUnlock.ogg", 0.4, 1};
+        titles[] = {};
+    };
+    
+    //AOSoul added: Casino
+    //Casino
+    class slot_spin
+    {
+        name = "slot_spin";
+        sound[] = {"\sounds\casino\slot_spin.ogg", 1.25, 1};
+        titles[] = {};
+    };
+
+    class slot_payoff
+    {
+        name = "slot_payoff";
+        sound[] = {"\sounds\casino\slot_payoff.ogg", 1.25, 1};
+        titles[] = {};
+    };
+
+    class Caching {
+        name = "caching";
+        sound[] = {"\sounds\casino\caching.ogg", 1.25, 1};
+        titles[] = {};
+    };
+
+    class slotspinsound
+    {
+        name = "slotspinSound";
+        sound[] = {"\sounds\casino\slot_spin.ogg", 1.25, 1};
+        titles[] = {};
+    };
+
+    class jackpotsound
+    {
+        name = "jackpotSound";
+        sound[] = {"\sounds\casino\slot_payoff.ogg", 1.25, 1};
+        titles[] = {};
+    };
+    
+    //AOSoul Added : lockpick sound
+    //UseLockpick
+    class Lockpick {
+        name = "Lockpick";
+        sound[] = { "\sounds\lockpick.ogg", 0.75, 1 };
+        titles[] = { };
+    };
+    
+    class alert {
+        name = "alert";
+        sound[] = { "\sounds\alert.ogg", 1.5, 1 };
+        titles[] = { };
+    };
+	
+	class blinkerclick {
+        name = "blinkerclick";
+        sound[] = {"\sounds\Indicators\blinkerclick_sfx.ogg", 1.0, 1};
+        titles[] = {};
+    };
+    
+    class blinkerstart {
+        name = "blinkerstart";
+        sound[] = {"\sounds\Indicators\blinkerstart_sfx.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+	//Cop Custom Siren
+	//Cop Stop Vehicle Male
+    class CopStopVehicleMale {
+        name = "CopStopVehicleMale";
+        sound[] = {"\sounds\Cop\Cop_VehicleStop_M.ogg", 2, 1};
+        titles[] = {};
+    };
+	
+	//Cop Stop Vehicle Female
+    class CopStopVehicleFemale {
+        name = "CopStopVehicleFemale";
+        sound[] = {"\sounds\Cop\Cop_VehicleStop_F.ogg", 2, 1};
+        titles[] = {};
+    };
+	
+	//Cop HandsUp Male
+    class CopHandsUpMale {
+        name = "CopHandsUpMale";
+        sound[] = {"\sounds\Cop\Cop_HandsUp_M.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	//Cop HandsUp Female
+    class CopHandsUpFemale {
+        name = "CopHandsUpFemale";
+        sound[] = {"\sounds\Cop\Cop_HandsUp_F.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	//Cop Surrender Male
+    class CopSurrenderMale {
+        name = "CopSurrenderMale";
+        sound[] = {"\sounds\Cop\Cop_Surrender_M.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	//Cop Surrender Female
+    class CopSurrenderFemale {
+        name = "CopSurrenderFemale";
+        sound[] = {"\sounds\Cop\Cop_Surrender_F.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	//Cop Miranda Male
+    class CopMirandaMale {
+        name = "CopMirandaMale";
+        sound[] = {"\sounds\Cop\Cop_Miranda_M.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	//Cop Miranda Female
+    class CopMirandaFemale {
+        name = "CopMirandaFemale";
+        sound[] = {"\sounds\Cop\Cop_Miranda_F.ogg", 1, 1};
+        titles[] = {};
+    };
+	
+	//Cop Thanks
+    class CopThanks {
+        name = "CopThanks";
+        sound[] = {"\sounds\Cop\Cop_Thanks_F.ogg", 1, 1};
+        titles[] = {};
+    };
+	
+	//Cop Save
+    class CopSave {
+        name = "CopSave";
+        sound[] = {"\sounds\Cop\Cop_Save_F.ogg", 1, 1};
+        titles[] = {};
+    };
+	
+	//Cop Prison Song
+    class CopPrisonSong {
+        name = "CopPrisonSong";
+        sound[] = {"\sounds\Cop\Cop_PrisonSong.ogg", 4, 1};
+        titles[] = {};
+    };
+    
+	//Dung Sound
+	class DungSound {
+        name = "DungSound";
+        sound[] = {"\sounds\Dung.ogg", 4, 1};
         titles[] = {};
     };
 };

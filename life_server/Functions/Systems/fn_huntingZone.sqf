@@ -13,13 +13,13 @@
 private ["_animalList","_dist","_radius","_zoneName","_unitsNear","_animalsActive"];
 params [
         ["_zoneName","",[""]],
-        ["_maxAnimals",10,[0]]
+        ["_maxAnimals",30,[0]]
 ];
 
 if (_zoneName isEqualTo "") exitWith {};
 _animalList = ["Sheep_random_F","Goat_random_F","Hen_random_F","Cock_random_F"];
 _radius = (getMarkerSize _zoneName) select 0;
-_dist = _radius + 100;
+_dist = _radius + 80;
 _zone = getMarkerPos _zoneName;
 
 if (!isNil "animals" && {!(count animals isEqualTo 0)}) then {
@@ -49,5 +49,5 @@ for "_i" from 0 to 1 step 0 do {
         };
     };
     uiSleep (3 + random 2);
-    _maxAnimals = param [1,10,[0]];
+    _maxAnimals = param [1,30,[0]];
 };
