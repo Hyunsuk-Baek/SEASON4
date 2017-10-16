@@ -272,7 +272,6 @@ if( _win != 0 ) then
 else
 {
 	_winnings ctrlSetText "You lose. Dealer Wins.";
-	sleep 3;
 	closeDialog 0;
 
 	//you lose

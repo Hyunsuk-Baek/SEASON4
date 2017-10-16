@@ -230,7 +230,6 @@ else
 				_Dcard2 ctrlSetText format ["%1",_number];
 				_winnings = _display displayCtrl 6001;
 				_winnings ctrlSetText "You Lose. Dealer got Black Jack.";
-				sleep 3;
 				closeDialog 0;
 				_bet1 ctrlEnable true;
 				_bet2 ctrlEnable true;

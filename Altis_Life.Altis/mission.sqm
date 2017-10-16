@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=74;
+	toggles=65;
 	class ItemIDProvider
 	{
-		nextID=2270;
+		nextID=2346;
 	};
 	class MarkerIDProvider
 	{
-		nextID=45;
+		nextID=46;
 	};
 	class Camera
 	{
-		pos[]={1957.6882,138.14467,5651.7637};
-		dir[]={-0.67218196,-0.59157658,-0.44524863};
-		up[]={-0.49320158,0.80623275,-0.32669386};
-		aside[]={-0.5522387,7.0780516e-008,0.83370179};
+		pos[]={5071.3486,61.94754,10428.046};
+		dir[]={-0.041903734,-0.87535942,0.48178652};
+		up[]={-0.075845152,0.48356363,0.87202668};
+		aside[]={0.99631321,-2.6178895e-007,0.086654596};
 	};
 };
 binarizationWanted=0;
@@ -74,13 +74,15 @@ addons[]=
 	"A3_Structures_F_Households_Slum",
 	"E76_buildingstower",
 	"buildingsCasino2_F",
-	"A3_Structures_F_Heli_Items_Electronics"
+	"A3_Structures_F_Heli_Items_Electronics",
+	"mm_buildings",
+	"A3_Structures_F_Walls"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=31;
+		items=32;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -272,6 +274,11 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item31
+		{
+			className="mm_buildings";
+			name="mm_buildings";
+		};
 	};
 };
 randomSeed=709509;
@@ -347,7 +354,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=878;
+		items=933;
 		class Item0
 		{
 			dataType="Marker";
@@ -368,23 +375,24 @@ class Mission
 		class Item2
 		{
 			dataType="Marker";
-			position[]={6409.4014,265.47192,9487.4932};
+			position[]={6405.5073,265.47195,9472.6299};
 			name="iron_mine";
 			text="철 광산";
 			type="mil_triangle";
 			colorName="ColorBrown";
 			id=4;
+			atlOffset=2.9032288;
 		};
 		class Item3
 		{
 			dataType="Marker";
-			position[]={7259.6763,0,8221.3125};
+			position[]={7276.7471,-1.4901161e-008,8193.3203};
 			name="salt_mine";
 			text="소금 광산";
 			type="mil_triangle";
 			colorName="ColorBrown";
 			id=5;
-			atlOffset=0.57508051;
+			atlOffset=-3.2583985;
 		};
 		class Item4
 		{
@@ -410,13 +418,13 @@ class Mission
 		class Item6
 		{
 			dataType="Marker";
-			position[]={4296.3311,118.60348,8164.1436};
+			position[]={4295.8667,118.28414,8185.9429};
 			name="diamond_mine";
 			text="다이아몬드 광산";
 			type="mil_triangle";
 			colorName="ColorBrown";
 			id=9;
-			atlOffset=-24.267204;
+			atlOffset=-8.2522964;
 		};
 		class Item7
 		{
@@ -432,14 +440,14 @@ class Mission
 		class Item8
 		{
 			dataType="Marker";
-			position[]={4001.6389,0,8467.9844};
+			position[]={3892.8474,0,8410.2686};
 			name="peaches_1";
 			text="복숭아밭";
 			type="loc_Tree";
 			colorName="ColorRed";
 			angle=10.697997;
 			id=11;
-			atlOffset=-38.998878;
+			atlOffset=-56.106148;
 		};
 		class Item9
 		{
@@ -728,10 +736,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7259.3838,4.6862068,8220.9912};
+				position[]={7276.4546,4.6862068,8192.999};
 				angles[]={0,1.40113,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -739,7 +748,7 @@ class Mission
 			};
 			id=35;
 			type="Land_cmp_Hopper_F";
-			atlOffset=1.1659236;
+			atlOffset=-2.6694074;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5715,19 +5724,21 @@ class Mission
 		class Item134
 		{
 			dataType="Marker";
-			position[]={5499.0679,27.99,10498.514};
+			position[]={5498.7524,0,10498.778};
 			name="AOSOUL_ATM_Marker_1";
+			text="ATM";
 			type="loc_Tourism";
 			colorName="ColorGreen";
 			id=257;
+			atlOffset=-27.99;
 		};
 		class Item135
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5499.0615,29.276148,10498.513};
-				angles[]={0,3.9302635,0};
+				position[]={5498.7813,29.276148,10498.74};
+				angles[]={-0,3.9302635,0};
 			};
 			side="Empty";
 			flags=4;
@@ -5973,13 +5984,13 @@ class Mission
 		class Item150
 		{
 			dataType="Marker";
-			position[]={6061.2993,-1.0901937,9671.4004};
+			position[]={6061.2988,0,9671.4004};
 			name="AOSOUL_Broadcast_Marker_1";
 			text="방송타워";
 			type="loc_Transmitter";
-			colorName="ColorBrown";
+			colorName="ColorBlue";
 			id=281;
-			atlOffset=-448.88397;
+			atlOffset=-447.79385;
 		};
 		class Item151
 		{
@@ -10594,32 +10605,32 @@ class Mission
 		class Item342
 		{
 			dataType="Marker";
-			position[]={1269.8706,30.875717,5382.2334};
+			position[]={1282.9259,30.695454,5327.855};
 			name="AOSOUL_Cloth_Marker_6";
 			text="옷상점";
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=710;
-			atlOffset=23.673496;
+			atlOffset=14.367348;
 		};
 		class Item343
 		{
 			dataType="Marker";
-			position[]={1269.1765,21.665272,5381.0537};
+			position[]={1269.6451,21.485008,5333.1162};
 			name="AOSOUL_Market_Maker_6";
 			text="마켓";
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=711;
-			atlOffset=14.463051;
+			atlOffset=5.816452;
 		};
 		class Item344
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1269.9005,4.0179834,5382.2437};
-				angles[]={0,2.1017418,0};
+				position[]={1282.9558,3.8377204,5327.8652};
+				angles[]={0,2.0431819,0};
 			};
 			side="Empty";
 			flags=4;
@@ -10636,10 +10647,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1269.1792,4.0179834,5381.063};
-				angles[]={0,2.1218247,0};
+				position[]={1269.6478,3.8377194,5333.1255};
+				angles[]={0,5.1817503,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="call{this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""];this setVariable [""realname"",""마켓""];}";
@@ -10647,26 +10659,25 @@ class Mission
 			};
 			id=713;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.43772554;
 		};
 		class Item346
 		{
 			dataType="Marker";
-			position[]={1270.5076,20.909065,5383.458};
+			position[]={1270.6837,20.728802,5335.0542};
 			name="AOSOUL_General_ㅡMarker_6";
 			text="잡화점";
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=714;
-			atlOffset=13.706844;
+			atlOffset=4.178669;
 		};
 		class Item347
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1270.5693,4.0179834,5383.4468};
-				angles[]={0,2.0591753,0};
+				position[]={1270.6521,3.837719,5335.0625};
+				angles[]={0,5.1962795,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13105,21 +13116,21 @@ class Mission
 		class Item526
 		{
 			dataType="Marker";
-			position[]={5426.4023,8.7375488,1723.2346};
+			position[]={5486.3198,8.689209,2096.928};
 			name="AOSOUL_Fishmarket_Marker_1";
 			text="물고기 상점";
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=1071;
-			atlOffset=4.2502174;
+			atlOffset=18.689209;
 		};
 		class Item527
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5426.4033,5.0735388,1723.251};
-				angles[]={0,4.7008219,0};
+				position[]={5486.5259,19.553452,2096.9485};
+				angles[]={-0,2.3944254,-0};
 			};
 			side="Empty";
 			flags=4;
@@ -13130,26 +13141,24 @@ class Mission
 			};
 			id=1072;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.0059494972;
 		};
 		class Item528
 		{
 			dataType="Marker";
-			position[]={2384.1575,4.996314,5370.4746};
+			position[]={2553.2874,27.096909,5307.0132};
 			name="AOSOUL_Fishmarket_Marker_2";
 			text="물고기 상점";
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=1073;
-			atlOffset=4.2949452;
 		};
 		class Item529
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2384.1885,1.280196,5370.4639};
-				angles[]={6.2815623,0,0};
+				position[]={2553.2947,23.254324,5306.9976};
+				angles[]={-0,2.0578706,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13160,26 +13169,24 @@ class Mission
 			};
 			id=1074;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.15486062;
 		};
 		class Item530
 		{
 			dataType="Marker";
-			position[]={7134.4683,0,8123.2583};
+			position[]={7053.9888,10,7813.8784};
 			name="AOSOUL_Fishmarket_Marker_3";
 			text="물고기 상점";
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=1075;
-			atlOffset=-3.2258399;
 		};
 		class Item531
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7134.4756,4.3422112,8123.25};
-				angles[]={0,4.2211409,0};
+				position[]={7053.9766,10.580257,7813.9111};
+				angles[]={-0,1.0056933,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13190,28 +13197,28 @@ class Mission
 			};
 			id=1076;
 			type="Land_InfoStand_V2_F";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item532
 		{
 			dataType="Marker";
-			position[]={4881.8179,0,10105.445};
+			position[]={5363.27,0,10364.158};
 			name="AOSOUL_Fishmarket_Marker_4";
 			text="물고기 상점";
 			type="c_unknown";
 			colorName="ColorGreen";
 			id=1077;
-			atlOffset=0.031560063;
+			atlOffset=-27.99;
 		};
 		class Item533
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4881.5313,2.3013091,10105.947};
-				angles[]={0.00069053395,1.1449782,6.2817206};
+				position[]={5363.1753,28.90283,10364.511};
+				angles[]={-0,5.4227257,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false;   " \n "this enableSimulation false;   " \n "this addAction[localize ""STR_MAR_Fish_Market"",life_fnc_virt_menu,""fishmarket""];  " \n "this setVariable [""realname"",""물고기 상점""];";
@@ -13219,6 +13226,7 @@ class Mission
 			};
 			id=1078;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.33257294;
 		};
 		class Item534
 		{
@@ -15770,7 +15778,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5349.7612,21.403679,2947.1909};
+				position[]={5363.6797,21.403679,2929.5491};
 			};
 			side="Empty";
 			flags=5;
@@ -15786,7 +15794,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5349.9058,25.126457,2947.1475};
+				position[]={5363.8242,25.126457,2929.5056};
 				angles[]={0,3.1207049,0};
 			};
 			side="Empty";
@@ -17623,7 +17631,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5432.3828,29.101135,10142.747};
+				position[]={5432.3828,28.573025,10142.747};
 				angles[]={0,2.3459098,0};
 			};
 			side="Empty";
@@ -17634,7 +17642,7 @@ class Mission
 			};
 			id=1964;
 			type="Land_landscapePart2";
-			atlOffset=-0.088895798;
+			atlOffset=-0.6170063;
 		};
 		class Item740
 		{
@@ -17651,8 +17659,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5448.6943,28.934952,10155.455};
-				angles[]={0,2.3493528,0};
+				position[]={5446.9966,28.580257,10153.984};
+				angles[]={-0,2.3493528,0};
 			};
 			side="Empty";
 			flags=4;
@@ -17663,7 +17671,6 @@ class Mission
 			};
 			id=1979;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.1805191;
 		};
 		class Item742
 		{
@@ -17685,7 +17692,7 @@ class Mission
 			flags=1;
 			id=1990;
 			type="ModuleHideTerrainObjects_F";
-			atlOffset=0.87601471;
+			atlOffset=1.4041252;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19072,17 +19079,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4296.3848,145.74715,8163.2222};
+				position[]={4295.9204,145.42781,8185.0215};
 			};
 			side="Empty";
-			flags=5;
+			flags=1;
 			class Attributes
 			{
 				init="call{this allowdamage false;}";
 			};
 			id=2125;
 			type="Land_LampDecor_F";
-			atlOffset=0.029998779;
+			atlOffset=15.953438;
 		};
 		class Item813
 		{
@@ -19277,7 +19284,7 @@ class Mission
 		class Item824
 		{
 			dataType="Marker";
-			position[]={4001.854,0,8467.7891};
+			position[]={3893.0625,0,8410.0732};
 			name="AOSOUL_PeachField_Marker_1";
 			markerType="ELLIPSE";
 			type="ellipse";
@@ -19287,14 +19294,14 @@ class Mission
 			b=30;
 			angle=10.697997;
 			id=2155;
-			atlOffset=-39.001686;
+			atlOffset=-56.159725;
 		};
 		class Item825
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3972.5391,55.05225,8473.2559};
+				position[]={3863.7476,55.05225,8415.54};
 				angles[]={0,0.18671329,0};
 			};
 			side="Empty";
@@ -19305,14 +19312,14 @@ class Mission
 			};
 			id=2156;
 			type="Land_LampAirport_F";
-			atlOffset=0.038303375;
+			atlOffset=-18.448277;
 		};
 		class Item826
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3996.5015,61.69186,8438.5781};
+				position[]={3887.71,61.69186,8380.8623};
 				angles[]={0,0.18671329,0};
 			};
 			side="Empty";
@@ -19323,13 +19330,14 @@ class Mission
 			};
 			id=2157;
 			type="Land_LampAirport_F";
+			atlOffset=-15.835522;
 		};
 		class Item827
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4031.7578,42.163532,8463.6836};
+				position[]={3922.9663,42.163532,8405.9678};
 				angles[]={0,0.18671329,0};
 			};
 			side="Empty";
@@ -19340,13 +19348,14 @@ class Mission
 			};
 			id=2158;
 			type="Land_LampAirport_F";
+			atlOffset=-32.275635;
 		};
 		class Item828
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4006.1897,41.772179,8496.5107};
+				position[]={3897.3982,41.772179,8438.7949};
 				angles[]={0,0.18671329,0};
 			};
 			side="Empty";
@@ -19357,7 +19366,7 @@ class Mission
 			};
 			id=2159;
 			type="Land_LampAirport_F";
-			atlOffset=0.0006313324;
+			atlOffset=-21.291512;
 		};
 		class Item829
 		{
@@ -20219,6 +20228,1263 @@ class Mission
 			id=2267;
 			type="Land_GamingSet_01_controller_F";
 			atlOffset=0.78370476;
+		};
+		class Item878
+		{
+			dataType="Marker";
+			position[]={6790.6582,0,10233.859};
+			name="AOSOUL_Resoruce_Marker_1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorPink";
+			fillName="DiagGrid";
+			a=30;
+			b=30;
+			angle=10.697997;
+			id=2270;
+			atlOffset=-92.062256;
+		};
+		class Item879
+		{
+			dataType="Marker";
+			position[]={6405.437,265.3584,9472.2461};
+			name="AOSOUL_Resoruce_Marker_2";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorPink";
+			fillName="DiagGrid";
+			a=30;
+			b=30;
+			angle=10.697997;
+			id=2271;
+			atlOffset=2.8502502;
+		};
+		class Item880
+		{
+			dataType="Marker";
+			position[]={4295.812,135.80835,8185.9468};
+			name="AOSOUL_Resoruce_Marker_3";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorPink";
+			fillName="DiagGrid";
+			a=30;
+			b=30;
+			angle=10.697997;
+			id=2272;
+			atlOffset=9.2591629;
+		};
+		class Item881
+		{
+			dataType="Marker";
+			position[]={7276.7671,0.21751738,8193.2588};
+			name="AOSOUL_Resoruce_Marker_4";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorPink";
+			fillName="DiagGrid";
+			a=30;
+			b=30;
+			angle=10.697997;
+			id=2273;
+			atlOffset=-3.0481248;
+		};
+		class Item882
+		{
+			dataType="Marker";
+			position[]={2955.0295,13.427194,6693.0083};
+			name="AOSOUL_Resoruce_Marker_5";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorPink";
+			fillName="DiagGrid";
+			a=30;
+			b=30;
+			angle=10.697997;
+			id=2274;
+			atlOffset=0.0021438599;
+		};
+		class Item883
+		{
+			dataType="Marker";
+			position[]={8690.75,12.012939,4209.0249};
+			name="AOSOUL_Resoruce_Marker_6";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorPink";
+			fillName="DiagGrid";
+			a=30;
+			b=30;
+			angle=10.697997;
+			id=2275;
+			atlOffset=-1.9417238;
+		};
+		class Item884
+		{
+			dataType="Marker";
+			position[]={7573.3501,33.282249,9053.6191};
+			name="AOSOUL_ATM_Marker_2";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2276;
+		};
+		class Item885
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7573.3789,34.568447,9053.5811};
+				angles[]={-0,3.9302635,0.0016194459};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_2";
+			};
+			id=2277;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item886
+		{
+			dataType="Marker";
+			position[]={8344.7734,9.8136463,8675.4912};
+			name="AOSOUL_ATM_Marker_3";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2278;
+			atlOffset=-27.744482;
+		};
+		class Item887
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8345.0869,39.075649,8675.9297};
+				angles[]={0,1.3441309,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_3";
+			};
+			id=2279;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item888
+		{
+			dataType="Marker";
+			position[]={7099.0161,10,7742.7192};
+			name="AOSOUL_ATM_Marker_4";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2280;
+		};
+		class Item889
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7099.061,11.286148,7742.7363};
+				angles[]={0,2.5577111,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_4";
+			};
+			id=2281;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item890
+		{
+			dataType="Marker";
+			position[]={7109.0742,35.324265,7292.4312};
+			name="AOSOUL_ATM_Marker_5";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2282;
+		};
+		class Item891
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7109.0703,36.610577,7292.418};
+				angles[]={0,2.9159696,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_5";
+			};
+			id=2283;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item892
+		{
+			dataType="Marker";
+			position[]={4617.915,200.05,7921.2026};
+			name="AOSOUL_ATM_Marker_6";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2284;
+		};
+		class Item893
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4617.9087,201.33615,7921.1914};
+				angles[]={0,1.5497013,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_6";
+			};
+			id=2285;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item894
+		{
+			dataType="Marker";
+			position[]={3662.6987,30.300104,7251.3218};
+			name="AOSOUL_ATM_Marker_7";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2286;
+		};
+		class Item895
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3662.7058,31.586058,7251.2803};
+				angles[]={0,0.52807444,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_7";
+			};
+			id=2287;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item896
+		{
+			dataType="Marker";
+			position[]={2525.6416,15.021358,5460.0552};
+			name="AOSOUL_ATM_Marker_8";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2288;
+		};
+		class Item897
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2525.6594,16.307606,5460.0469};
+				angles[]={0,4.8901825,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_8";
+			};
+			id=2289;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item898
+		{
+			dataType="Marker";
+			position[]={1271.3833,2.9998357,5340.3013};
+			name="AOSOUL_ATM_Marker_9";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2290;
+			atlOffset=-0.0001642704;
+		};
+		class Item899
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1271.3794,4.2861481,5340.2881};
+				angles[]={0,2.0180485,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_9";
+			};
+			id=2291;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item900
+		{
+			dataType="Marker";
+			position[]={6451.8926,180.21516,5485.6621};
+			name="AOSOUL_ATM_Marker_10";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2292;
+			atlOffset=0.21516418;
+		};
+		class Item901
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6451.8887,181.50148,5485.6489};
+				angles[]={0,0.39626867,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_10";
+			};
+			id=2293;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item902
+		{
+			dataType="Marker";
+			position[]={5488.3042,18.885237,2073.6667};
+			name="AOSOUL_ATM_Marker_11";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2294;
+			atlOffset=28.885237;
+		};
+		class Item903
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5488.3003,20.171549,2073.6536};
+				angles[]={0,6.0297074,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_11";
+			};
+			id=2295;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item904
+		{
+			dataType="Marker";
+			position[]={5618.4741,18.979836,2435.4314};
+			name="AOSOUL_ATM_Marker_12";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2296;
+			atlOffset=-0.00016403198;
+		};
+		class Item905
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5618.4702,20.266148,2435.4182};
+				angles[]={0,4.7292247,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_12";
+			};
+			id=2297;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item906
+		{
+			dataType="Marker";
+			position[]={5694.7109,18.98,3031.3679};
+			name="AOSOUL_ATM_Marker_13";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2298;
+		};
+		class Item907
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5694.707,20.266312,3031.3547};
+				angles[]={0,4.7267427,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_13";
+			};
+			id=2299;
+			type="Land_Atm_02_F";
+			atlOffset=0.00016403198;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item908
+		{
+			dataType="Marker";
+			position[]={5153.1582,19.049999,3134.1414};
+			name="AOSOUL_ATM_Marker_14";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2300;
+		};
+		class Item909
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5153.1611,20.336147,3134.1125};
+				angles[]={0,0.0065284981,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_14";
+			};
+			id=2301;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item910
+		{
+			dataType="Marker";
+			position[]={4838.0176,0,10542.87};
+			name="AOSOUL_Club_Marker_1";
+			text="클럽";
+			type="mil_join";
+			colorName="ColorRed";
+			id=2302;
+			atlOffset=10;
+		};
+		class Item911
+		{
+			dataType="Marker";
+			position[]={5630.0576,68.709999,4501.4258};
+			name="AOSOUL_Club_Marker_2";
+			text="클럽";
+			type="mil_join";
+			colorName="ColorRed";
+			id=2303;
+		};
+		class Item912
+		{
+			dataType="Marker";
+			position[]={1600.0991,1.27,5768.4463};
+			name="AOSOUL_Club_Marker_3";
+			text="클럽";
+			type="mil_join";
+			colorName="ColorRed";
+			id=2304;
+		};
+		class Item913
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7357.7368,37.401123,6819.207};
+				angles[]={0,1.7227447,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="call{this allowdamage false;}";
+			};
+			id=2309;
+			type="Land_Gaol_Main";
+			atlOffset=0.25232697;
+		};
+		class Item914
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7342.6582,38.645599,6798.4019};
+				angles[]={0.0066592805,1.6904067,6.268187};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this allowdamage false;}";
+			};
+			id=2313;
+			type="Land_CncShelter_F";
+			atlOffset=-3.8146973e-006;
+		};
+		class Item915
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7344.0073,38.626068,6798.2417};
+				angles[]={0.0083294781,1.6904067,6.2731905};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this allowdamage false;}";
+			};
+			id=2314;
+			type="Land_CncShelter_F";
+			atlOffset=-3.8146973e-006;
+		};
+		class Item916
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7345.4722,38.612938,6798.0601};
+				angles[]={0.0083294781,1.6904067,6.2731905};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this allowdamage false;}";
+			};
+			id=2315;
+			type="Land_CncShelter_F";
+		};
+		class Item917
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7346.9326,38.599609,6797.8823};
+				angles[]={0.0066592805,1.6904067,6.2731905};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this allowdamage false;}";
+			};
+			id=2316;
+			type="Land_CncShelter_F";
+			atlOffset=-7.6293945e-006;
+		};
+		class Item918
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7348.2817,38.587189,6797.7222};
+				angles[]={0.0066592805,1.6904067,6.2731905};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this allowdamage false;}";
+			};
+			id=2317;
+			type="Land_CncShelter_F";
+			atlOffset=-3.8146973e-006;
+		};
+		class Item919
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7349.7466,38.573761,6797.5405};
+				angles[]={0.0066592805,1.6904067,6.2731905};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this allowdamage false;}";
+			};
+			id=2318;
+			type="Land_CncShelter_F";
+			atlOffset=3.8146973e-006;
+		};
+		class Item920
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7405.292,37.122948,6818.7056};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=2331;
+			type="ModuleHideTerrainObjects_F";
+			atlOffset=-0.0074501038;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item921
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7405.585,41.180405,6818.6851};
+				angles[]={0,4.8648915,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="call{this allowdamage false;}";
+			};
+			id=2332;
+			type="Land_BarGate_F";
+			atlOffset=-0.00065231323;
+		};
+		class Item922
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5360.3721,18.98,2959.7183};
+				angles[]={0,3.143476,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="call{this allowdamage false;}";
+			};
+			id=2335;
+			type="Land_Gaol_Main";
+		};
+		class Item923
+		{
+			dataType="Marker";
+			position[]={5369.6655,0,2934.6448};
+			name="AOSOUL_CityJail_Marker_1";
+			text="구치소";
+			type="loc_Ruin";
+			colorName="ColorRed";
+			angle=132.37799;
+			id=2336;
+			atlOffset=-18.98;
+		};
+		class Item924
+		{
+			dataType="Marker";
+			position[]={5419.1963,0,10179.031};
+			name="AOSOUL_ATM_Marker_15";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2337;
+			atlOffset=-28;
+		};
+		class Item925
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5419.2378,29.553019,10178.94};
+				angles[]={0.0036539643,0.80095255,6.2744713};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_15";
+			};
+			id=2338;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item926
+		{
+			dataType="Marker";
+			position[]={7378.3887,0,6053.5908};
+			name="AOSOUL_ATM_Marker_16";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2339;
+			atlOffset=-46.480427;
+		};
+		class Item927
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7378.3882,47.951469,6053.5923};
+				angles[]={-0,2.6602347,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_16";
+			};
+			id=2340;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item928
+		{
+			dataType="Marker";
+			position[]={3331.3064,30.625881,7429.687};
+			name="AOSOUL_ATM_Marker_17";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2341;
+		};
+		class Item929
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3331.2771,31.911848,7429.688};
+				angles[]={0.0073486087,5.1679683,0.0059301639};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_17";
+			};
+			id=2342;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item930
+		{
+			dataType="Marker";
+			position[]={5314.3042,19.359045,3088.4373};
+			name="AOSOUL_ATM_Marker_18";
+			text="ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=2343;
+		};
+		class Item931
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5314.2578,20.644934,3088.3926};
+				angles[]={0.0033829133,4.6623931,0.0088229347};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+				name="AOSOUL_ATM_OBJ_18";
+			};
+			id=2344;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item932
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5064.1626,5.687871,10440.819};
+				angles[]={0.059928458,0,0.043306526};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=2345;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };

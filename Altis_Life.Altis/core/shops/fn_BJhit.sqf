@@ -390,7 +390,6 @@ if( _gameover ) then
 	else
 	{
 		_winnings ctrlSetText "You lose. BUST";
-		sleep 3;
 		closeDialog 0;
 		
 		//you lose
