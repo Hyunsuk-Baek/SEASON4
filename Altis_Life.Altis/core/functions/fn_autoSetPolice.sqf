@@ -37,7 +37,7 @@ if (life_atmbank >= 130000) then //100k
     player addMagazine "16Rnd_9x21_Mag";
     player addMagazine "16Rnd_9x21_Mag";
     player addMagazine "16Rnd_9x21_Mag";
-    player addWeapon "NVGoggles_OPFOR";
+    player addWeapon "NVGoggles";
     player addItem "FirstAidKit";
     player addItem "FirstAidKit";
     player addItem "ItemGPS";
