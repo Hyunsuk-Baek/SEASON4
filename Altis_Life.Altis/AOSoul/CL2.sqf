@@ -1,6 +1,6 @@
 private ["_obj","_lightRd","_lightB","_lightL","_lightR","_leftRed","_lumens","_attach"];
 
-_obj = NCDOMEILL;
+_obj = NightDome_2;
 
  _attach = [[5, 0, 2], [-5, 0, 2],[0,5,2],[0,-5,2],[0,0,3]];
 
@@ -94,7 +94,7 @@ if (sunOrMoon < 1) then {
 	_lumens = 20;  //default 5
 };
 
-_offset = 0.45; //seconds between default 0.45
+_offset = 0.15; //seconds between default 0.45
 //L, Up, Fw, Up, R, Up, Bk, Up
 while {(alive _obj)} do
  {

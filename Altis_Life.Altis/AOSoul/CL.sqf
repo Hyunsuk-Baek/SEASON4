@@ -1,6 +1,6 @@
 private ["_obj","_lightRd","_lightB","_lightL","_lightR","_leftRed","_lumens","_attach"];
 
-_obj = NCDOME;
+_obj = NightDome_1;
 
  _attach = [[5, 0, 2], [-5, 0, 2],[0,5,2],[0,-5,2],[0,0,3]];
 
