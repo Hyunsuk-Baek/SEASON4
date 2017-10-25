@@ -208,6 +208,9 @@ class CfgRemoteExec {
 		
 		F(SHARK_fnc_dayOrNight,ANYONE)	//Shark attack time fnc
 		F(SHARK_fnc_heightCorrection,ANYONE)	//Shark behavior
+
+		F(murshun_cigs_fnc_smoke,ANYONE)	//Cig Smoke Effect
+		F(murshun_cigs_fnc_smoke,ANYONE)	//Cig Smoke Effect
     };
 
     class Commands {
@@ -221,5 +224,9 @@ class CfgRemoteExec {
         F(setFuel,ANYONE)
         F(enableSimulationGlobal,ANYONE)
         F(call,ANYONE)
+
+		//AOSOUL Added
+		F(switchmove,ANYONE)
+		F(say3d,ANYONE)
     };
 };
