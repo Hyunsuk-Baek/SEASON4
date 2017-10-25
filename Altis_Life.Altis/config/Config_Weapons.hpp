@@ -397,7 +397,12 @@ class WeaponShops {
             { "Chemlight_red", "", 1500, -1, "" },
             { "Chemlight_yellow", "", 1500, -1, "" },
             { "Chemlight_green", "", 1500, -1, "" },
-            { "Chemlight_blue", "", 1500, -1, "" }
+            { "Chemlight_blue", "", 1500, -1, "" },
+
+			{ "murshun_cigs_cigpack", "담배한갑", 4500, -1, "" },
+			{ "immersion_pops_poppack", "츄파춥스", 1200, -1, "" },
+			{ "murshun_cigs_lighter", "라이터", 10000, -1, "" },
+			{ "murshun_cigs_matches", "성냥", 3000, -1, "" }
         };
         mags[] = {};
         accs[] = {};
@@ -418,7 +423,12 @@ class WeaponShops {
             { "Chemlight_red", "", 1500, 500, "" },
             { "Chemlight_yellow", "", 1500, 500, "" },
             { "Chemlight_green", "", 1500, 500, "" },
-            { "Chemlight_blue", "", 1500, 500, "" }
+            { "Chemlight_blue", "", 1500, 500, "" },
+
+			{ "murshun_cigs_cigpack", "담배한갑", 4500, -1, "" },
+			{ "immersion_pops_poppack", "츄파춥스", 1200, -1, "" },
+			{ "murshun_cigs_lighter", "라이터", 10000, -1, "" },
+			{ "murshun_cigs_matches", "성냥", 3000, -1, "" }
         };
         mags[] = {};
         accs[] = {};
@@ -446,6 +456,12 @@ class WeaponShops {
             { "NVGogglesB_blk_F", "", 500000, 300000, "call life_coplevel >= 4" },
             { "NVGogglesB_gry_F", "", 500000, 300000, "call life_donorlevel >= 3" },
             { "NVGogglesB_grn_F", "", 500000, 300000, "call life_donorlevel >= 3" },
+
+			{ "murshun_cigs_cigpack", "담배한갑", 4500, -1, "" },
+			{ "immersion_pops_poppack", "츄파춥스", 1200, -1, "" },
+			{ "murshun_cigs_lighter", "라이터", 10000, -1, "" },
+			{ "murshun_cigs_matches", "성냥", 3000, -1, "" },
+
             { "acc_flashlight", "", 5000, -1, "" },
             { "acc_pointer_IR", "", 5000, -1, "" },
             { "Chemlight_red", "", 1500, -1, "" },
@@ -713,6 +729,12 @@ class WeaponShops {
             { "NVGogglesB_blk_F", "", 900000, 450000, "call life_mediclevel >= 4" },
             { "NVGogglesB_gry_F", "", 900000, 450000, "call life_donorlevel >= 4" },
             { "NVGogglesB_grn_F", "", 900000, 450000, "call life_donorlevel >= 4" },
+
+			{ "murshun_cigs_cigpack", "담배한갑", 4500, -1, "" },
+			{ "immersion_pops_poppack", "츄파춥스", 1200, -1, "" },
+			{ "murshun_cigs_lighter", "라이터", 10000, -1, "" },
+			{ "murshun_cigs_matches", "성냥", 3000, -1, "" },
+
             { "hgun_ACPC2_F", "", 120000, 60000, "" },
             { "hgun_Rook40_F", "", 130000, 65000, "" },
             { "C_UavTerminal", "", 130000, 65000, "call life_mediclevel >= 3" },
