@@ -289,18 +289,25 @@ class CfgSpawnPoints {
     class LosSantos {
 
         class Civilian {
-            class Georgetown {
+            class Paleto {
                 displayName = "뉴비마을";
                 spawnMarker = "civilian_Spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "!license_civ_rebel";
+            };
+
+            class reb {
+            	displayName = "반군 아지트";
+            	spawnMarker = "Reb_Spawn_1";
+            	icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+            	condition = "license_civ_rebel";
             };
         };
 		
 		/*
 		cop_spawn_HQ_1 - 경찰 본부
 		cop_spawn_east_1 - 경찰서 동쪽
-		cop_spawn_North_1 - 경찰서 북쪽		
+		cop_spawn_North_1 - 경찰서 북쪽
 		cop_spawn_airHQ_1 - 경찰서 공항
 		Cop_Spawn_Sea_1 - 해양경찰서
 		cop_spawn_Jail_1 - 교도소
@@ -352,7 +359,7 @@ class CfgSpawnPoints {
 		/*
 		med_spawn_HQ_1 - 도시 병원
 		med_spawn_east_1 - 동쪽 병원
-		med_spawn_North_1 - 북쪽 병원		
+		med_spawn_North_1 - 북쪽 병원
 		med_spawn_AirHQ_1 - 공항 병원
 		*/
         class Medic {
