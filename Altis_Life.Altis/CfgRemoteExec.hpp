@@ -210,7 +210,6 @@ class CfgRemoteExec {
 		F(SHARK_fnc_heightCorrection,ANYONE)	//Shark behavior
 
 		F(murshun_cigs_fnc_smoke,ANYONE)	//Cig Smoke Effect
-		F(murshun_cigs_fnc_smoke,ANYONE)	//Cig Smoke Effect
     };
 
     class Commands {
