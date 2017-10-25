@@ -8,7 +8,7 @@ class EditorData
 	toggles=65;
 	class ItemIDProvider
 	{
-		nextID=2800;
+		nextID=2802;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4777.2163,66.396988,3549.2166};
-		dir[]={0.79488605,-0.60265338,-0.071444586};
-		up[]={0.60030866,0.79793882,-0.053955749};
-		aside[]={-0.089525223,-6.6647772e-009,-0.99604642};
+		pos[]={3092.0605,24.85009,11512.466};
+		dir[]={0.14816926,-0.50289959,-0.85155624};
+		up[]={0.086208902,0.86434114,-0.49545804};
+		aside[]={-0.98520261,-9.5285941e-008,-0.17142296};
 	};
 };
 binarizationWanted=0;
@@ -91,13 +91,14 @@ addons[]=
 	"A3_Weapons_F_Items",
 	"A3L_Court",
 	"war_Tarmac",
-	"A3_Structures_F_Civ_Statues"
+	"A3_Structures_F_Civ_Statues",
+	"plp_beachobjects"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=38;
+		items=39;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -326,6 +327,11 @@ class AddonsMetaData
 			className="war_Tarmac";
 			name="war_Tarmac";
 		};
+		class Item38
+		{
+			className="plp_beachobjects";
+			name="plp_beachobjects";
+		};
 	};
 };
 randomSeed=709509;
@@ -401,7 +407,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1160;
+		items=1161;
 		class Item0
 		{
 			dataType="Marker";
@@ -5451,12 +5457,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5459.6685,-2.8216701,11273.935};
-				angles[]={0.52433574,0,0.31874737};
+				position[]={5472.8945,0,11298.484};
 			};
 			name="zeusadmin";
 			id=242;
 			type="ModuleCurator_F";
+			atlOffset=6.7018371;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5543,12 +5549,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5482.5376,1.2895093,11275.47};
-				angles[]={0.24026716,0,0.12271336};
+				position[]={5480.3408,0,11298.267};
 			};
 			name="zeus_Soulfucker";
 			id=243;
 			type="ModuleCurator_F";
+			atlOffset=5.3683939;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5635,12 +5641,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5509.8989,-0.77694583,11273.663};
-				angles[]={0.076517709,0,6.0194736};
+				position[]={5487.2393,0,11298.376};
 			};
 			name="zeus_AOS";
 			id=244;
 			type="ModuleCurator_F";
+			atlOffset=4.5959067;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -26368,6 +26374,23 @@ class Mission
 			};
 			id=2797;
 			type="Land_LampDecor_F";
+		};
+		class Item1160
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4993.52,4.1649323,10576.113};
+				angles[]={0,5.6672387,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{this allowdamage false;}";
+			};
+			id=2800;
+			type="plp_bo_LogoWikiIlluminated";
+			atlOffset=3.445055;
 		};
 	};
 };
