@@ -489,7 +489,7 @@ class WeaponShops {
             { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, -1, "" },
             { "SmokeShellRed", "최루탄", 32000, 16000, "" },
             { "B_UavTerminal", "", 130000, 65000, "call life_coplevel >= 3" },
-            { "I_UavTerminal", "", 130000, 65000, "call life_coplevel >= 3" },
+            //{ "I_UavTerminal", "", 130000, 65000, "call life_coplevel >= 3" },
             //플레어 건
             { "hgun_PDW2000_F", "플레어 건", 70000, 35000, "" },
             
@@ -761,7 +761,7 @@ class WeaponShops {
 
             { "hgun_ACPC2_F", "", 120000, 60000, "" },
             { "hgun_Rook40_F", "", 130000, 65000, "" },
-            { "C_UavTerminal", "", 130000, 65000, "call life_mediclevel >= 3" },
+            //{ "C_UavTerminal", "", 130000, 65000, "call life_mediclevel >= 3" },
             { "I_UavTerminal", "", 130000, 65000, "call life_mediclevel >= 3" },
             { "hgun_Pistol_heavy_01_F", "", 240000, 120000, "" },
             { "hgun_PDW2000_F", "플레어 건", 70000, 35000, "" },
