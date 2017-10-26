@@ -36,7 +36,10 @@ class CarShops {
             { "C_Van_02_transport_F", "" },
             { "C_Van_02_service_F", "" },
             //오프로드
-            { "C_Offroad_02_unarmed_F", "" } //Apex DLC
+            { "C_Offroad_02_unarmed_F", "" }, //Apex DLC
+			//ADDONS
+			//노란 트랙터
+			{ "vvv_steyrmulti_civ", "" }
         };
     };
 
@@ -209,7 +212,10 @@ class CarShops {
             //HEMTT 정비
             { "B_Truck_01_Repair_F", "" },
             //HEMTT 기본형 토우트럭으로 활용
-            { "B_Truck_01_mover_F", "" }
+            { "B_Truck_01_mover_F", "" },
+			//ADDONS
+			//소방차
+			{ "vvv_fire_truck", "" }
         };
     };
 
@@ -307,7 +313,10 @@ class CarShops {
             //템페스트 탄약
             { "O_Truck_03_ammo_F", "" },
             //HEMTT 탄약
-            { "B_Truck_01_ammo_F", "call life_coplevel >= 4" }
+            { "B_Truck_01_ammo_F", "call life_coplevel >= 4" },
+			//ADDONS
+			//경찰 초토바이
+			{ "red_kawasaki_10_p_p_sheriff", "" }
         };
     };
 
@@ -1629,6 +1638,31 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		vItemSpace = 120;
 		conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
 		price = 1750000;
+        textures[] = {};
+    };
+
+	//ADDONS
+	//메딕 - 소방차
+    class vvv_fire_truck {
+        vItemSpace = 300;
+        conditions = "";
+        price = 1000000;
+        textures[] = {};
+    };
+
+    //경찰 - 오토바이
+    class red_kawasaki_10_p_p_sheriff {
+        vItemSpace = 50;
+        conditions = "";
+        price = 50000;
+        textures[] = {};
+    };
+
+    //시민 - 노란 트랙터
+    class vvv_steyrmulti_civ {
+        vItemSpace = 300;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 800000;
         textures[] = {};
     };
 };
