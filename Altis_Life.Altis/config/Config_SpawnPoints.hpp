@@ -296,12 +296,15 @@ class CfgSpawnPoints {
                 conditions = "!license_civ_rebel";
             };
 
+            //반군 스폰 지역은 자살 악용해서 가는 유저 때문에 임시로 뺴둠
+            /*
             class reb {
             	displayName = "반군 아지트";
             	spawnMarker = "Reb_Spawn_1";
             	icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             	condition = "license_civ_rebel";
             };
+            */
         };
 		
 		/*
