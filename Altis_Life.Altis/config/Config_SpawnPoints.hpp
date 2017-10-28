@@ -293,7 +293,7 @@ class CfgSpawnPoints {
                 displayName = "뉴비마을";
                 spawnMarker = "civilian_Spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "!license_civ_rebel";
+                conditions = "";
             };
 
             //반군 스폰 지역은 자살 악용해서 가는 유저 때문에 임시로 뺴둠
