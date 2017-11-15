@@ -17,8 +17,8 @@ if (hasInterface) then {
 [] execVM "AOSoul\admintools\loop.sqf";//Admin Helper
 [] execVM "AOSoul\teargas.sqf"; //TearGas
 [] execVM "AOSoul\DynWeather.sqf"; // 날씨 
-[] execVM "AOSoul\CL.sqf"; //돔 네온
-[] execVM "AOSoul\CL2.sqf";
+//[] execVM "AOSoul\CL.sqf"; //돔 네온
+[] execVM "AOSoul\CL2.sqf"; //돔 네온
 [] execVM "AOSoul\safezone.sqf";//세이프존
 [] execVM "AOSoul\VehicleIndicators\indicatorInit.sqf"; //Vehicle Indicator
 [] execVM "AOSoul\dlc_unlocker.sqf";	//DLC Unlocker
