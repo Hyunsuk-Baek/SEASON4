@@ -30,13 +30,13 @@ if (life_atmbank >= 130000) then //100k
     player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
     player addMagazine "30Rnd_65x39_caseless_mag_Tracer";
     player addMagazine "30Rnd_65x39_caseless_mag_Tracer";    
-    player addWeapon "hgun_P07_snds_F"; //tazer
-    player addMagazine "16Rnd_9x21_Mag";
-    player addMagazine "16Rnd_9x21_Mag";
-    player addMagazine "16Rnd_9x21_Mag";
-    player addMagazine "16Rnd_9x21_Mag";
-    player addMagazine "16Rnd_9x21_Mag";
-    player addMagazine "16Rnd_9x21_Mag";
+    player addWeapon "taser"; //tazer
+    player addMagazine "vvv_np_magazine_taser";
+    player addMagazine "vvv_np_magazine_taser";
+    player addMagazine "vvv_np_magazine_taser";
+    player addMagazine "vvv_np_magazine_taser";
+    player addMagazine "vvv_np_magazine_taser";
+    player addMagazine "vvv_np_magazine_taser";
     player addWeapon "NVGoggles";
     player addItem "FirstAidKit";
     player addItem "FirstAidKit";

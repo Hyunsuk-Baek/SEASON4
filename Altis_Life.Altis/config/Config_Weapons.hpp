@@ -494,7 +494,8 @@ class WeaponShops {
             { "hgun_PDW2000_F", "플레어 건", 70000, 35000, "" },
             
             //권총
-            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 5000, 1000, "" },
+            //{ "hgun_P07_snds_F", $STR_W_items_StunPistol, 5000, 1000, "" },
+			{ "taser", $STR_W_items_StunPistol, 5000, 1000, "" },
             { "hgun_P07_khk_F", "", 10000, 5000, "call life_donorlevel >= 1" }, //Apex DLC
             { "hgun_Pistol_heavy_02_F", "", 50000, 25000, "call life_coplevel >= 4" },
             { "SMG_05_F", "", 50000, 25000, "call life_coplevel >= 2" },
@@ -567,6 +568,8 @@ class WeaponShops {
         };
 
         mags[] = {
+        	//Taser
+        	{ "vvv_np_magazine_taser", "테이저탄약",        1000, 500, "" },
             //hgun_P07_F, hgun_P07_khk_F, hgun_Rook40_F
             { "16Rnd_9x21_Mag", "",        1000, 500, "" },
             { "16Rnd_9x21_red_Mag", "",    1000, 500, "" },
