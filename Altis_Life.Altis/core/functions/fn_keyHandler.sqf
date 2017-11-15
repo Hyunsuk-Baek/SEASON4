@@ -765,20 +765,22 @@ switch (_code) do {
         };
     };
 
-    // 쉬야 Shift + Num1
+    // 쓰러지기 Shift + Num1
     case 79:
     {
         if(_shift) then {_handled = true;};
         if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
         if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
-		if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
+        if ((time - life_action_delay) < 0.1) exitWith {hint localize "STR_NOTF_ActionDelay";};
         life_action_delay = time;
-        if(_shift && {isTouchingGround player}&& {stance player isEqualTo "STAND"}&& {!life_is_arrested}) then
+        if(_shift && {!life_is_arrested} && {!life_AOSOUL_Delay}) then
         {
-            [player,"Acts_AidlPercMstpSlowWrflDnon_pissing",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "Acts_AidlPercMstpSlowWrflDnon_pissing";
-            player playMoveNow "Acts_AidlPercMstpSlowWrflDnon_pissing";
-            [] call life_fnc_Pee;
+            [] spawn {
+                life_AOSOUL_Delay = true;
+                sleep 5;
+                life_AOSOUL_Delay = false;
+            };
+        	[] spawn life_fnc_Ragdoll;
         };
     };
 
