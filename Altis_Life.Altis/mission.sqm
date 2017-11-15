@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=100;
 	autoGroupingDist=10;
-	toggles=65;
+	toggles=193;
 	class ItemIDProvider
 	{
 		nextID=3425;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3227.6084,237.46721,4998.6982};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={3229.6704,178.65359,5057.9224};
+		dir[]={-0.27386063,-0.68591964,0.67418063};
+		up[]={-0.25814417,0.72767663,0.63549042};
+		aside[]={0.92648029,-3.3498509e-008,0.3763482};
 	};
 };
 binarizationWanted=0;
@@ -6129,7 +6129,7 @@ class Mission
 			};
 			id=288;
 			type="Land_InfoStand_V2_F";
-			atlOffset=-0.0080032349;
+			atlOffset=-0.0079956055;
 		};
 		class Item158
 		{
@@ -11422,7 +11422,7 @@ class Mission
 			};
 			id=771;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.0001591444;
+			atlOffset=0.0091192722;
 		};
 		class Item396
 		{
@@ -12423,7 +12423,6 @@ class Mission
 				angles[]={0,0.75159115,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="call{ " \n " this enableSimulation false; " \n " this allowDamage false;  " \n " this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""car_garage_8""; }];  " \n " this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; " \n " this setVariable [""realname"",""차고""]; " \n "}";
@@ -12431,7 +12430,7 @@ class Mission
 			};
 			id=956;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.0009765625;
+			atlOffset=0.75899696;
 		};
 		class Item473
 		{
@@ -12675,7 +12674,7 @@ class Mission
 			position[]={3690.2959,30.452963,7249.6484};
 			name="civ_air_garage_1";
 			type="Empty";
-			angle=117.42724;
+			angle=117.42723;
 			id=1015;
 		};
 		class Item492
@@ -12693,7 +12692,7 @@ class Mission
 			position[]={3699.0471,30.624279,7268.0942};
 			name="civ_air_2";
 			type="Empty";
-			angle=118.74037;
+			angle=118.74036;
 			id=1017;
 		};
 		class Item494
@@ -15943,7 +15942,6 @@ class Mission
 			};
 			id=1831;
 			type="Land_TableDesk_F";
-			atlOffset=3.8146973e-006;
 		};
 		class Item651
 		{
@@ -17786,13 +17784,13 @@ class Mission
 		class Item745
 		{
 			dataType="Marker";
-			position[]={3227.6714,178.08167,5061.5693};
+			position[]={3227.6746,178.08167,5061.6616};
 			name="AOSOUL_Chopshop_Marker_2";
 			text="대포차 상점";
 			type="o_armor";
 			colorName="Color1_FD_F";
 			id=2081;
-			atlOffset=2.5225677;
+			atlOffset=2.5170746;
 		};
 		class Item746
 		{
@@ -17806,7 +17804,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this allowDamage false; this enableSimulation false; this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,""cAOSOUL_Chopshop_Marker_2"",1.5,false,false,"""",'isNull objectParent player && player distance _target < 3.5']; " \n "this setVariable [""realname"",""대포차 상점""];}";
+				init="call{this allowDamage false; this enableSimulation false; this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,""AOSOUL_Chopshop_Marker_2"",1.5,false,false,"""",'isNull objectParent player && player distance _target < 3.5']; " \n "this setVariable [""realname"",""대포차 상점""];}";
 				name="AOSOUL_Chopshop_OBJ_2";
 			};
 			id=2082;
@@ -22455,7 +22453,6 @@ class Mission
 			};
 			id=2551;
 			type="Land_LampDecor_F";
-			atlOffset=0.13418579;
 		};
 		class Item953
 		{
