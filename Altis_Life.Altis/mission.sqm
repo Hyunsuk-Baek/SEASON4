@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3749.1167,72.169052,7212.0166};
-		dir[]={-0.73382735,-0.4423694,0.51559651};
-		up[]={-0.3619698,0.89682138,0.25432542};
-		aside[]={0.57490468,3.3208926e-007,0.81824058};
+		pos[]={3227.6084,237.46721,4998.6982};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -6117,30 +6117,29 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8628.0928,109.39441,8720.6152};
-				angles[]={0,1.3934782,6.1359262};
+				position[]={8628.0928,109.39478,8720.6152};
+				angles[]={0,1.3934708,6.1359315};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{this allowDamage false; this enableSimulation false; this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,""chop_shop_1"",1.5,false,false,"""",'isNull objectParent player && player distance _target < 3.5']; " \n "this setVariable [""realname"",""대포차 상점""];}";
+				init="call{this allowDamage false; this enableSimulation false; this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,""AOSOUL_Chopshop_Marker_1"",1.5,false,false,"""",'isNull objectParent player && player distance _target < 3.5']; " \n "this setVariable [""realname"",""대포차 상점""];}";
 				name="AOSOUL_Chopshop_OBJ_1";
 			};
 			id=288;
 			type="Land_InfoStand_V2_F";
-			atlOffset=-0.0083694458;
+			atlOffset=-0.0080032349;
 		};
 		class Item158
 		{
 			dataType="Marker";
-			position[]={4643.4629,0,8587.2148};
+			position[]={5331.373,-10,1584.6672};
 			name="AOSOUL_TurtleDealer_Marker_1";
 			text="거북이 상점 Turtle Shop";
 			type="mil_ambush";
 			colorName="ColorRed";
 			id=289;
-			atlOffset=-75.842285;
 		};
 		class Item159
 		{
@@ -6148,13 +6147,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4643.7969,105.79974,8587.3652};
-				angles[]={0,2.9810843,0};
+				angles[]={0,2.9810922,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				init="call{this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Wong_Food_Cart"",life_fnc_virt_menu,""wongs""]; " \n "this setVariable [""realname"",""거북이 상점""];}";
-				name="AOSOUL_Chopshop_OBJ_2";
+				name="AOSOUL_TurtleDealer_OBJ_2";
 			};
 			id=290;
 			type="Land_InfoStand_V2_F";
@@ -11423,7 +11422,7 @@ class Mission
 			};
 			id=771;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.0091192722;
+			atlOffset=0.0001591444;
 		};
 		class Item396
 		{
@@ -11751,7 +11750,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5690.27,19.560257,3032.8438};
-				angles[]={-0,0.9827584,0};
+				angles[]={0,0.9827584,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11769,7 +11768,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5686.3374,19.560257,3039.8049};
-				angles[]={-0,0.92691708,0};
+				angles[]={0,0.92691708,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11798,7 +11797,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5681.5098,19.560257,3045.6311};
-				angles[]={-0,0.94673616,0};
+				angles[]={0,0.94673616,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12424,6 +12423,7 @@ class Mission
 				angles[]={0,0.75159115,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="call{ " \n " this enableSimulation false; " \n " this allowDamage false;  " \n " this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""car_garage_8""; }];  " \n " this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; " \n " this setVariable [""realname"",""차고""]; " \n "}";
@@ -12431,7 +12431,7 @@ class Mission
 			};
 			id=956;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.75899696;
+			atlOffset=0.0009765625;
 		};
 		class Item473
 		{
@@ -12675,7 +12675,7 @@ class Mission
 			position[]={3690.2959,30.452963,7249.6484};
 			name="civ_air_garage_1";
 			type="Empty";
-			angle=117.42725;
+			angle=117.42724;
 			id=1015;
 		};
 		class Item492
@@ -12693,7 +12693,7 @@ class Mission
 			position[]={3699.0471,30.624279,7268.0942};
 			name="civ_air_2";
 			type="Empty";
-			angle=118.74039;
+			angle=118.74037;
 			id=1017;
 		};
 		class Item494
@@ -15943,6 +15943,7 @@ class Mission
 			};
 			id=1831;
 			type="Land_TableDesk_F";
+			atlOffset=3.8146973e-006;
 		};
 		class Item651
 		{
@@ -16911,7 +16912,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5341.062,19.580257,3138.9561};
-				angles[]={-0,6.2538986,0};
+				angles[]={0,6.2538986,0};
 			};
 			side="Empty";
 			flags=4;
@@ -17022,6 +17023,7 @@ class Mission
 			};
 			id=1945;
 			type="Land_InfoStand_V2_F";
+			atlOffset=-9.5367432e-006;
 		};
 		class Item702
 		{
@@ -17190,7 +17192,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5161.6221,28.580257,10250.072};
-				angles[]={-0,5.4706044,0};
+				angles[]={0,5.4706044,0};
 			};
 			side="Empty";
 			flags=4;
@@ -17784,32 +17786,32 @@ class Mission
 		class Item745
 		{
 			dataType="Marker";
-			position[]={3228.6045,178.08167,5062.5366};
+			position[]={3227.6714,178.08167,5061.5693};
 			name="AOSOUL_Chopshop_Marker_2";
 			text="대포차 상점";
 			type="o_armor";
 			colorName="Color1_FD_F";
 			id=2081;
-			atlOffset=2.5722504;
+			atlOffset=2.5225677;
 		};
 		class Item746
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3227.6821,176.13701,5061.6279};
-				angles[]={6.223258,6.2138095,6.2681909};
+				position[]={3227.6819,176.13684,5061.6284};
+				angles[]={6.2232509,6.2138085,6.2681928};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{this allowDamage false; this enableSimulation false; this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,""chop_shop_1"",1.5,false,false,"""",'isNull objectParent player && player distance _target < 3.5']; " \n "this setVariable [""realname"",""대포차 상점""];}";
-				name="AOSOUL_Chopshop_OBJ_3";
+				init="call{this allowDamage false; this enableSimulation false; this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,""cAOSOUL_Chopshop_Marker_2"",1.5,false,false,"""",'isNull objectParent player && player distance _target < 3.5']; " \n "this setVariable [""realname"",""대포차 상점""];}";
+				name="AOSOUL_Chopshop_OBJ_2";
 			};
 			id=2082;
 			type="Land_InfoStand_V2_F";
-			atlOffset=-0.0068054199;
+			atlOffset=-0.0069885254;
 		};
 		class Item747
 		{
@@ -22453,6 +22455,7 @@ class Mission
 			};
 			id=2551;
 			type="Land_LampDecor_F";
+			atlOffset=0.13418579;
 		};
 		class Item953
 		{
@@ -22505,7 +22508,7 @@ class Mission
 		class Item956
 		{
 			dataType="Marker";
-			position[]={5331.7227,-10,1584.5615};
+			position[]={4643.9136,75.99054,8587.3896};
 			name="AOSOUL_TurtleDealer_Marker_2";
 			text="거북이 상점 Turtle Shop";
 			type="mil_ambush";
@@ -22517,18 +22520,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5331.3408,6.0304875,1584.6711};
-				angles[]={0,4.0131855,0};
+				position[]={5331.3408,6.0302577,1584.671};
+				angles[]={0,4.0131927,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="call{this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Wong_Food_Cart"",life_fnc_virt_menu,""wongs""]; " \n "this setVariable [""realname"",""거북이 상점""];}";
-				name="AOSOUL_Chopshop_OBJ_4";
+				name="AOSOUL_TurtleDealer_OBJ_1";
 			};
 			id=2558;
 			type="Land_InfoStand_V2_F";
+			atlOffset=6.2347126;
 		};
 		class Item958
 		{
@@ -25194,6 +25197,7 @@ class Mission
 					showWP="NEVER";
 					id=3366;
 					type="Move";
+					atlOffset=-7.6293945e-006;
 				};
 				class Item9
 				{
@@ -25628,7 +25632,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5331.3271,19,3147.3413};
-				angles[]={0,3.1143227,-0};
+				angles[]={0,3.1143227,0};
 			};
 			side="Empty";
 			flags=4;
@@ -25645,7 +25649,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5342.0522,21.179586,3139.2139};
-				angles[]={0,0.78151882,-0};
+				angles[]={0,0.78151882,0};
 			};
 			side="Empty";
 			flags=5;
@@ -25784,7 +25788,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3336.5388,32.353504,7484.0078};
-				angles[]={0,6.0145726,-0};
+				angles[]={0,6.0145726,0};
 			};
 			side="Empty";
 			flags=5;
