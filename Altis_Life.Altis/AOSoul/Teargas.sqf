@@ -13,7 +13,15 @@ while{true} do
     (getpos (nearestObject [getpos player, "SmokeShellRed"]) select 2 < 0.5)
     };
 
-    if (headgear player != "H_CrewHelmetHeli_B") then
+    if (headgear player != "H_CrewHelmetHeli_B",
+							"H_MM_Buzzard_Gasmask_01",
+							"H_ALFR_Metal_Gasmask_RU_fuckyou",
+							"H_ALFR_Metal_Gasmask_RU_grey",
+							"H_ALFR_Metal_Gasmask_RU_khk",
+							"H_ALFR_Metal_Gasmask_RU_oli",
+							"H_ALFR_Metal_Gasmask_RU_blk",
+							"GITS_MASK_HOOD"
+							) then
     {
         "dynamicBlur" ppEffectEnable true; // enables ppeffect
         "dynamicBlur" ppEffectAdjust [20]; // intensity of blur
