@@ -118,7 +118,7 @@ switch (true) do {
 	
 	//Cooking System
     case (_item isEqualTo "firewood"): {
-        if ((player distance (getMarkerPos "hunting_marker")) > 1000) exitWith {hint "캠프파이어는 사냥 지역에서만 사용 가능합니다!!";};
+        //if ((player distance (getMarkerPos "hunting_marker")) > 500) exitWith {hint "캠프파이어는 사냥 지역에서만 사용 가능합니다!!";};
             [] spawn life_fnc_campFire;
             closeDialog 0;
         };

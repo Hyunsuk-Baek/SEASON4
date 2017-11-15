@@ -4,7 +4,7 @@
     Author: Fresqo
     Description: creates a camp fire for a period so player can cook food. can only be created in hunting zone
 */
-if (life_fire) exitWith {hint "캠프파이어가 이미 주변에 있습니다!!"};
+if (life_fire) exitWith {hint "캠프파이어를 설치할 수 없습니다. 다른곳에 설치 해 보세요."};
 private _fire = "Land_Campfire_F" createVehicle position player;
 if (isNull _fire) exitWith {};
 
