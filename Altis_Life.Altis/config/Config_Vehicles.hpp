@@ -313,10 +313,7 @@ class CarShops {
             //템페스트 탄약
             { "O_Truck_03_ammo_F", "" },
             //HEMTT 탄약
-            { "B_Truck_01_ammo_F", "call life_coplevel >= 4" },
-			//ADDONS
-			//경찰 초토바이
-			{ "red_kawasaki_10_p_p_sheriff", "" }
+            { "B_Truck_01_ammo_F", "call life_coplevel >= 4" }
         };
     };
 
@@ -1647,14 +1644,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 300;
         conditions = "";
         price = 1000000;
-        textures[] = {};
-    };
-
-    //경찰 - 오토바이
-    class red_kawasaki_10_p_p_sheriff {
-        vItemSpace = 50;
-        conditions = "";
-        price = 50000;
         textures[] = {};
     };
 
