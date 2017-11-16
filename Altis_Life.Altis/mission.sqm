@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=100;
 	autoGroupingDist=10;
-	toggles=65;
+	toggles=74;
 	class ItemIDProvider
 	{
-		nextID=3550;
+		nextID=3556;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6847.8818,13.369348,1695.2603};
-		dir[]={0.078426801,-0.88617647,0.45668653};
-		up[]={0.14998944,0.46332753,0.87340045};
-		aside[]={0.98558283,8.3629857e-008,-0.16925493};
+		pos[]={5359.2197,82.539352,1830.0015};
+		dir[]={0.32749194,-0.4682453,0.82078779};
+		up[]={0.17353626,0.88359416,0.43492967};
+		aside[]={0.92890501,-3.6566053e-007,-0.37062988};
 	};
 };
 binarizationWanted=0;
@@ -392,7 +392,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1176;
+		items=1178;
 		class Item0
 		{
 			dataType="Marker";
@@ -7012,7 +7012,6 @@ class Mission
 				angles[]={0,3.2971714,0.0016194459};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="call{this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[localize""STR_MAR_Boat_Shop"",life_fnc_vehicleShopMenu,[""cop_ship"",west,""cop_ship_1"",""cop"",""해양경찰서 보트샵""]];  " \n "this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Ship"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Ship"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_ship_1""; life_garage_type = ""Ship""; },"""",0,false,false,"""",'playerSide isEqualTo west'];  " \n "this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  " \n "this setVariable [""realname"",""경찰 보트 상점""];}";
@@ -7020,6 +7019,7 @@ class Mission
 			};
 			id=350;
 			type="Land_InfoStand_V2_F";
+			atlOffset=9.9553795;
 		};
 		class Item218
 		{
@@ -11428,7 +11428,7 @@ class Mission
 			};
 			id=771;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.0001591444;
+			atlOffset=0.0091192722;
 		};
 		class Item396
 		{
@@ -12429,7 +12429,6 @@ class Mission
 				angles[]={0,0.75159115,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="call{ " \n " this enableSimulation false; " \n " this allowDamage false;  " \n " this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""car_garage_8""; }];  " \n " this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; " \n " this setVariable [""realname"",""차고""]; " \n "}";
@@ -12437,7 +12436,7 @@ class Mission
 			};
 			id=956;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.0009765625;
+			atlOffset=0.75899696;
 		};
 		class Item473
 		{
@@ -15949,7 +15948,6 @@ class Mission
 			};
 			id=1831;
 			type="Land_TableDesk_F";
-			atlOffset=3.8146973e-006;
 		};
 		class Item651
 		{
@@ -22443,7 +22441,6 @@ class Mission
 			};
 			id=2551;
 			type="Land_LampDecor_F";
-			atlOffset=0.13418579;
 		};
 		class Item952
 		{
@@ -27615,7 +27612,7 @@ class Mission
 			position[]={5276.9883,-0.61572266,10657.474};
 			name="medic_spawn_w_1";
 			type="Empty";
-			angle=356.43042;
+			angle=356.43039;
 			id=3530;
 			atlOffset=-0.6260547;
 		};
@@ -27663,10 +27660,9 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5267.7686,2.9775057,10681.498};
-				angles[]={-0,0.99215114,0};
+				angles[]={0,0.99215114,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="call{this enableSimulation false;    " \n "this allowDamage false;    " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide isEqualTo independent '];    " \n "  " \n "this addAction[localize""STR_MAR_EMS_Item_Shop"",life_fnc_weaponShopMenu,""med_basic""];    " \n "  " \n "this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""med_market"",1.5,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide isEqualTo independent '];   " \n "   " \n "this addAction[localize""STR_MAR_EMS_Clothing_Shop"",life_fnc_clothingMenu,""med_clothing""];  " \n "  " \n "this addAction[localize""STR_MAR_Medical_Assistance"",life_fnc_healHospital,"""",1.5,false,false,"""",'isNull objectParent player && player distance _target < 5'];  " \n "  " \n "this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];  " \n "  " \n "this setVariable [""realname"",""상점""];}";
@@ -27674,7 +27670,7 @@ class Mission
 			};
 			id=3539;
 			type="Land_InfoStand_V2_F";
-			atlOffset=2.3841858e-007;
+			atlOffset=0.72495699;
 		};
 		class Item1169
 		{
@@ -27682,10 +27678,9 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5259.8418,2.2198639,10705.288};
-				angles[]={-0,1.4544492,0};
+				angles[]={0,1.4544492,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="call{this enableSimulation false;     " \n "this allowDamage false;    " \n "   " \n "removeAllWeapons this;   " \n "removeAllItems this;   " \n "removeAllAssignedItems this;   " \n "removeUniform this;   " \n "removeVest this;   " \n "removeBackpack this;   " \n "removeHeadgear this;   " \n "removeGoggles this;   " \n "this forceAddUniform ""U_O_Wetsuit"";   " \n "this addGoggles ""G_Aviator"";   " \n "    " \n "this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_ship"",independent,""med_boat_spawn_1"",""med"",""Kavala Hospital""]];     " \n "    " \n "this addAction[localize""STR_MAR_W_Car_Garage"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Ship"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Ship"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""med_boat_spawn_1""; life_garage_type = ""Ship""; },"""",0,false,false,"""",'playerSide isEqualTo independent'];     " \n "    " \n "this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];    " \n "  " \n "this setVariable [""realname"",""메딕 보트상점""];}";
@@ -27693,6 +27688,7 @@ class Mission
 			};
 			id=3540;
 			type="Land_InfoStand_V2_F";
+			atlOffset=10.433241;
 		};
 		class Item1170
 		{
@@ -27700,7 +27696,7 @@ class Mission
 			position[]={6876.8906,5.3105917,1745.902};
 			name="medic_spawn_w_2";
 			type="Empty";
-			angle=180.60297;
+			angle=180.60295;
 			id=3544;
 		};
 		class Item1171
@@ -27726,7 +27722,7 @@ class Mission
 			position[]={6856.6289,7.8093972,1694.5604};
 			name="med_boat_spawn_2";
 			type="Empty";
-			angle=99.328506;
+			angle=99.328499;
 			id=3546;
 			atlOffset=16.590931;
 		};
@@ -27747,10 +27743,9 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6874.3208,3.6417599,1705.3544};
-				angles[]={-0,1.1989635,0};
+				angles[]={0,1.1989635,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="call{this enableSimulation false;    " \n "this allowDamage false;    " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide isEqualTo independent '];    " \n "  " \n "this addAction[localize""STR_MAR_EMS_Item_Shop"",life_fnc_weaponShopMenu,""med_basic""];    " \n "  " \n "this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""med_market"",1.5,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide isEqualTo independent '];   " \n "   " \n "this addAction[localize""STR_MAR_EMS_Clothing_Shop"",life_fnc_clothingMenu,""med_clothing""];  " \n "  " \n "this addAction[localize""STR_MAR_Medical_Assistance"",life_fnc_healHospital,"""",1.5,false,false,"""",'isNull objectParent player && player distance _target < 5'];  " \n "  " \n "this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];  " \n "  " \n "this setVariable [""realname"",""상점""];}";
@@ -27758,6 +27753,7 @@ class Mission
 			};
 			id=3548;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.73394561;
 		};
 		class Item1175
 		{
@@ -27775,7 +27771,97 @@ class Mission
 			};
 			id=3549;
 			type="Land_InfoStand_V2_F";
-			atlOffset=10.168;
+			atlOffset=10.164751;
+		};
+		class Item1176
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5397.2061,-11.432816,1889.2391};
+				angles[]={6.2032881,1.5522474,-0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="call{this allowdamage false;}";
+			};
+			id=3554;
+			type="Land_nav_pier_m_F";
+			atlOffset=16.441284;
+		};
+		class Item1177
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5397.2285,-10,1906.7054};
+			};
+			areaSize[]={1,-1,1};
+			id=3555;
+			type="ModuleEditTerrainObject_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=7;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#state";
+					expression="_this setVariable [""#state"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=5;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="#doorStates";
+					expression="_this setVariable [""#doorStates"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 	};
 };
