@@ -41,7 +41,7 @@ _minimumRain = 0;
 _maximumRain = 0.8;
 // Wind vector strength never falls below this value. Must be greater or equal to 0 and less than or equal to _maximumWind.
 // (Suggested value: 0);
-_minimumWind = 2;
+_minimumWind = 0;
 // Wind vector strength never exceeds this value. Must be greater or equal to 0 and greater than or equal to _minimumWind.
 // (Suggested value: 8).
 _maximumWind = 8;
