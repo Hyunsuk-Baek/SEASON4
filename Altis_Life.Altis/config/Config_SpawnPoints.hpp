@@ -401,7 +401,7 @@ class CfgSpawnPoints {
 				conditions = "";
 			};
 
-			class MedCoastNorth	{
+			class MedCoastSouth	{
 				displayName = "남쪽 해안";
 				spawnMarker = "medic_spawn_w_2";
 				icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
