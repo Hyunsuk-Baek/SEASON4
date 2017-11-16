@@ -8,7 +8,7 @@ class EditorData
 	toggles=65;
 	class ItemIDProvider
 	{
-		nextID=3527;
+		nextID=3530;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5628.3599,56.063046,7496.0732};
-		dir[]={0.9352439,-0.30728808,-0.17588441};
-		up[]={0.30200064,0.95160985,-0.056794655};
-		aside[]={-0.18482713,3.9197039e-007,-0.98279244};
+		pos[]={6489.7686,45.255661,2137.8787};
+		dir[]={-0.15823713,-0.74498034,0.64809871};
+		up[]={-0.17670177,0.66707349,0.72372293};
+		aside[]={0.97149539,5.6461431e-007,0.23719695};
 	};
 };
 binarizationWanted=0;
@@ -391,7 +391,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1162;
+		items=1165;
 		class Item0
 		{
 			dataType="Marker";
@@ -6497,13 +6497,13 @@ class Mission
 		class Item188
 		{
 			dataType="Marker";
-			position[]={6480.9927,54.871029,2141.6145};
+			position[]={6493.6675,54.871033,2155.2729};
 			name="AOSOUL_DP_Marker_24";
 			text="배달미션 목적지 23";
 			type="loc_BusStop";
 			colorName="ColorYellow";
 			id=319;
-			atlOffset=35.871029;
+			atlOffset=35.871033;
 		};
 		class Item189
 		{
@@ -6942,8 +6942,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6481.2227,19.580257,2141.6677};
-				angles[]={0,0.51940215,0};
+				position[]={6493.8975,19.580257,2155.3262};
+				angles[]={-0,4.4294786,0};
 			};
 			side="Empty";
 			flags=4;
@@ -7517,7 +7517,7 @@ class Mission
 			type="b_unknown";
 			colorName="ColorOrange";
 			id=389;
-			atlOffset=1.2403297;
+			atlOffset=4.8827429;
 		};
 		class Item252
 		{
@@ -15948,6 +15948,7 @@ class Mission
 			};
 			id=1831;
 			type="Land_TableDesk_F";
+			atlOffset=3.8146973e-006;
 		};
 		class Item651
 		{
@@ -26324,7 +26325,7 @@ class Mission
 			};
 			id=3475;
 			type="vvv_puente01";
-			atlOffset=61.848118;
+			atlOffset=61.848125;
 		};
 		class Item1122
 		{
@@ -26375,7 +26376,7 @@ class Mission
 			};
 			id=3478;
 			type="vvv_puente01";
-			atlOffset=73.064758;
+			atlOffset=73.064766;
 		};
 		class Item1125
 		{
@@ -26462,7 +26463,7 @@ class Mission
 			};
 			id=3485;
 			type="vvv_puente01";
-			atlOffset=73.10022;
+			atlOffset=73.100227;
 		};
 		class Item1129
 		{
@@ -26496,7 +26497,7 @@ class Mission
 			};
 			id=3487;
 			type="vvv_puente01";
-			atlOffset=55.800568;
+			atlOffset=55.80056;
 		};
 		class Item1131
 		{
@@ -26530,7 +26531,7 @@ class Mission
 			};
 			id=3489;
 			type="vvv_puente01";
-			atlOffset=38.026749;
+			atlOffset=38.026741;
 		};
 		class Item1133
 		{
@@ -27495,6 +27496,111 @@ class Mission
 			id=3520;
 			type="ModuleHideTerrainObjects_F";
 			atlOffset=0.16806793;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1162
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6481.4595,19,2143.7551};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=3527;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1163
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6481.915,19,2158.7786};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=3528;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1164
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6477.5835,19,2153.7283};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=3529;
+			type="ModuleHideTerrainObjects_F";
 			class CustomAttributes
 			{
 				class Attribute0
