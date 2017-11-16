@@ -448,7 +448,7 @@ class WeaponShops {
 
     //Cop Shops
     class cop_basic {
-        name = "Altis Cop Shop";
+        name = "Cop Shop";
         side = "cop";
         conditions = "";
         items[] = {

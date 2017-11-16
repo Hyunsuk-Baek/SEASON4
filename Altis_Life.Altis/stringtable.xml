@@ -59,7 +59,7 @@
             <German>Bruce's Outback Outfits</German>
         </Key>
         <Key ID="STR_Shops_C_Police">
-            <Original>Altis Police Department Shop</Original>
+            <Original>Police Department Shop</Original>
             <Czech>Altis policejní oddělení Shop</Czech>
             <French>Vêtements de la police</French>
             <Spanish>Tienda del Departamento de Policía</Spanish>
@@ -246,7 +246,7 @@
             <Polish>Skup materiałów przemysłowych</Polish>
         </Key>
         <Key ID="STR_Shops_Cop">
-            <Original>APD Item Shop</Original>
+            <Original>Police Item Shop</Original>
             <Czech>APD Item Shop</Czech>
             <Spanish>Equipamiento Policial</Spanish>
             <Russian></Russian>
