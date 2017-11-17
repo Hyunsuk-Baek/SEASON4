@@ -168,8 +168,8 @@ class Clothing {
             { "B_Bergen_tna_f", "", 9500, "" }, //Apex DLC
             { "B_AssaultPack_sgg", "JET PACK", 300000, "" }, //jetpack
 			//AOSOUL Added Addons
-			{ "FLAY_HangGlider_Bag", "JET PACK", 50000, "" }, //행글라이더 - 블루
-			{ "FLAY_HangGliderBlack_Bag", "JET PACK", 50000, "" } //행글라이더 - 블랙
+			{ "FLAY_HangGlider_Bag", "JET PACK", 10000, "" }, //행글라이더 - 블루
+			{ "FLAY_HangGliderBlack_Bag", "JET PACK", 10000, "" } //행글라이더 - 블랙
         };
     };
 
