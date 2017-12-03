@@ -7,7 +7,7 @@
     Please read support for more informations.
 
     Description:
-    Initialize the server and required systems.
+    Initialize the server and required systems. test
 */
 private ["_dome","_rsb","_timeStamp","_extDBNotLoaded"];
 DB_Async_Active = false;
@@ -136,7 +136,7 @@ life_copLevel = 0;
 CONST(JxMxE_PublishVehicle,"false");
 
 /* Setup radio channels for west/independent/civilian */
-life_radio_custom = radioChannelCreate [[255, 0, 0, 0.8], "긴급 채널", "%UNIT_NAME", []];
+life_radio_custom = radioChannelCreate [[255, 0, 0, 0.8], "ê¸´ê¸‰ ì±„ë„�", "%UNIT_NAME", []];
 /*
 life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
