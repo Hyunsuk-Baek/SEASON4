@@ -39,7 +39,21 @@ class CarShops {
             { "C_Offroad_02_unarmed_F", "" }, //Apex DLC
 			//ADDONS
 			//노란 트랙터
-			{ "vvv_steyrmulti_civ", "" }
+			{ "vvv_steyrmulti_civ", "" },
+			//abarth 500 2008
+			{ "VVV_Abarth_2008_500", "" },
+			//chrysler 300 srt8 2012
+			{ "CHRlu_civ", "" },
+			//tesla model s
+			{ "Model_Slu_civ", "" },
+			//Bus Ikarus
+			{ "RDS_Ikarus_Civ_01", "" },
+			//harley 오토바이
+			{ "shounka_harley_a3", "" },
+			//마운틴 자전거
+			{ "RDS_MMT_Civ_01", "" },
+			//오래된 자전거
+			{ "RDS_Old_bike_Civ_01", "" }
         };
     };
 
@@ -105,10 +119,9 @@ class CarShops {
             { "I_Plane_Fighter_04_F", "license_civ_level5" },
             { "I_Plane_Fighter_03_dynamicLoadout_F", "license_civ_level5" },
             { "O_T_VTOL_02_infantry_dynamicLoadout_F", "license_civ_level5" },
-            { "O_T_VTOL_02_vehicle_dynamicLoadout_F", "license_civ_level5" }
-
-
-
+            { "O_T_VTOL_02_vehicle_dynamicLoadout_F", "license_civ_level5" },
+			//AOSOUL Added Addon start
+			{ "sab_geebee", "license_civ_level2" }
         };
     };
 
@@ -213,9 +226,19 @@ class CarShops {
             { "B_Truck_01_Repair_F", "" },
             //HEMTT 기본형 토우트럭으로 활용
             { "B_Truck_01_mover_F", "" },
-			//ADDONS
+			//AOSOUL Added ADDONS Start
 			//소방차
-			{ "vvv_fire_truck", "" }
+			{ "vvv_fire_truck", "" },
+			//2013 ford intercepotor medic
+			{ "DAR_ExplorerMedic", "" },
+			//renault master 3 vsrl
+			{ "chmaster3_thwthv", "" },
+			//vpc
+			{ "VPC_THW", "" },
+			//renault master 3 vtp
+			{ "chMaster3_vtp", "call life_mediclevel >= 4" },
+			//2007 chevrolet rahoe ems
+			{ "DAR_TahoeEMS", "" }
         };
     };
 
@@ -267,7 +290,10 @@ class CarShops {
             //타루 수송
             { "O_Heli_Transport_04_covered_F", "" },
             //타루 의료
-            { "O_Heli_Transport_04_medevac_F", "" }
+            { "O_Heli_Transport_04_medevac_F", "" },
+			//AOSOUL Added ADDONS Start
+			//Airbus HC EC135
+			{ "ec135_ems_F", "" }
         };
     };
 
@@ -313,7 +339,20 @@ class CarShops {
             //템페스트 탄약
             { "O_Truck_03_ammo_F", "" },
             //HEMTT 탄약
-            { "B_Truck_01_ammo_F", "call life_coplevel >= 4" }
+            { "B_Truck_01_ammo_F", "call life_coplevel >= 4" },
+			//AOSOUL Added Addon Start
+			//2013 ford taurus ppv
+			{ "DAR_TaurusPoliceState", "" },
+			//chrysler 300 srt8 2012 police
+			{ "CHRPlu", "" },
+			//ferrari ff police
+			{ "FFPlu", "call life_coplevel >= 4" },
+			//intercepotor the crowner
+			{ "bv_the_crowner_cop_patrol_interceptor", "" },
+			//patrol perrari 458 cop
+			{ "bv_458_cop_patrol", "call life_coplevel >= 3" },
+			//renault master 3 vtp
+			{ "chMaster3_pn", "" }
         };
     };
 
@@ -346,8 +385,10 @@ class CarShops {
 
             { "B_Plane_CAS_01_dynamicLoadout_F", "call life_coplevel >= 4" },
             { "B_Plane_Fighter_01_Stealth_F", "call life_coplevel >= 4" },
-            { "B_Plane_Fighter_01_F", "call life_coplevel >= 4" }
-
+            { "B_Plane_Fighter_01_F", "call life_coplevel >= 4" },
+			//AOSOUL Added Addon Start
+			//Airbus HC EC135 - 경찰
+			{ "ec135_policia_F", "" }
         };
     };
 
@@ -1639,19 +1680,175 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
 	//ADDONS
-	//메딕 - 소방차
+	///////////////////////////////경찰 자동차
+	//2013 ford taurus ppv
+    class DAR_TaurusPoliceState {
+        vItemSpace = 80;
+        conditions = "";
+        price = 260000;
+        textures[] = {};
+    };
+	//chrysler 300 srt8 2012 police
+    class CHRPlu {
+        vItemSpace = 80;
+        conditions = "";
+        price = 300000;
+        textures[] = {};
+    };
+	//ferrari ff police
+    class FFPlu {
+        vItemSpace = 80;
+        conditions = "";
+        price = 400000;
+        textures[] = {};
+    };
+	//intercepotor the crowner
+    class bv_the_crowner_cop_patrol_interceptor {
+        vItemSpace = 80;
+        conditions = "";
+        price = 300000;
+        textures[] = {};
+    };
+	//patrol perrari 458 cop
+    class bv_458_cop_patrol {
+        vItemSpace = 80;
+        conditions = "";
+        price = 380000;
+        textures[] = {};
+    };
+	//renault master 3 vtp
+    class chMaster3_pn {
+        vItemSpace = 150;
+        conditions = "";
+        price = 250000;
+        textures[] = {};
+    };
+
+    ///////////////////////////////경찰 헬기
+    //Airbus HC EC135
+    class ec135_policia_F {
+        vItemSpace = 60;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 800000;
+        textures[] = {};
+    };
+
+    ///////////////////////////////메딕 자동차
+    //소방차
     class vvv_fire_truck {
         vItemSpace = 300;
         conditions = "";
         price = 1000000;
         textures[] = {};
     };
+	//2013 ford intercepotor medic
+    class DAR_ExplorerMedic {
+        vItemSpace = 70;
+        conditions = "";
+        price = 300000;
+        textures[] = {};
+    };
+	//renault master 3 vsrl
+    class chmaster3_thwthv {
+        vItemSpace = 70;
+        conditions = "";
+        price = 250000;
+        textures[] = {};
+    };
+	//vpc - White
+    class VPC_THW {
+        vItemSpace = 150;
+        conditions = "";
+        price = 3000000;
+        textures[] = {};
+    };
+	//renault master 3 vtp
+    class chMaster3_vtp {
+        vItemSpace = 70;
+        conditions = "";
+        price = 300000;
+        textures[] = {};
+    };
+	//2007 chevrolet rahoe ems
+    class DAR_TahoeEMS {
+        vItemSpace = 70;
+        conditions = "";
+        price = 250000;
+        textures[] = {};
+    };
 
-    //시민 - 노란 트랙터
+    ///////////////////////////////메딕 헬기
+    class ec135_ems_F {
+        vItemSpace = 60;
+        conditions = "";
+        price = 800000;
+        textures[] = {};
+    };
+
+    ///////////////////////////////시민 자동차
+    //노란 트랙터
     class vvv_steyrmulti_civ {
         vItemSpace = 300;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 800000;
+        textures[] = {};
+    };
+    //abarth 500 2008
+    class vvv_steyrmulti_civ {
+        vItemSpace = 80;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 300000;
+        textures[] = {};
+    };
+    //chrysler 300 srt8 2012
+    class CHRlu_civ {
+        vItemSpace = 90;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 500000;
+        textures[] = {};
+    };
+    //tesla model s
+    class Model_Slu_civ {
+        vItemSpace = 85;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 450000;
+        textures[] = {};
+    };
+    //BUS Ikarus
+    class RDS_Ikarus_Civ_01 {
+        vItemSpace = 150;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 650000;
+        textures[] = {};
+    };
+    //harley 오토바이
+    class shounka_harley_a3 {
+        vItemSpace = 50;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 1500000;
+        textures[] = {};
+    };
+    //마운틴 자전거
+    class RDS_MMT_Civ_01 {
+        vItemSpace = 15;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 20000;
+        textures[] = {};
+    };
+    //오래된 자전거
+    class RDS_Old_bike_Civ_01 {
+        vItemSpace = 15;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 10000;
+        textures[] = {};
+    };
+
+    ///////////////////////////////시민 - 비행기
+    //Gee Bee R1
+    class sab_geebee {
+        vItemSpace = 100;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 2000000;
         textures[] = {};
     };
 };
