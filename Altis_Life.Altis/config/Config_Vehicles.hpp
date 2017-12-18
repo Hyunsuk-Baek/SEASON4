@@ -1794,7 +1794,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {};
     };
     //abarth 500 2008
-    class vvv_steyrmulti_civ {
+    class VVV_Abarth_2008_500 {
         vItemSpace = 80;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 300000;
